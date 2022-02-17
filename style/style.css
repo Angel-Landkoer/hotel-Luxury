@@ -100,6 +100,32 @@ html {
   margin-bottom: 20px;
 }
 
+.container__anchor-more {
+  margin-top: 34px;
+
+  text-align: center;
+}
+
+.container__anchor-more a {
+  display: inline-block;
+
+  padding: 10px;
+  width: 100px;
+  border: none;
+
+  font-size: 1.5rem;
+
+  
+  text-decoration: none;
+  border-radius: 6px;
+  background-color: #e0b973;
+  color: #f7f7f7;
+}
+
+.container__anchor-more a:hover {
+  background-color: #cea456;
+}
+
 .main__containers p {
   font-size: 1.6rem;
 
