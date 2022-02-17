@@ -1,0 +1,201 @@
+/*        Reset section       */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+
+  color: #14274a;
+}
+/*        End section       */
+
+/* first section */
+
+.header {
+  width: 100%;
+  height: auto;
+
+  color: #fff;
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--1.jpg?raw=true");
+  background-position: 20%;
+}
+
+.header img {
+  margin-left: 92px;
+  width: 150px;
+  height: 90px;
+}
+
+.header__menu {
+  font-size: 1.6rem;
+
+  list-style: none;
+}
+
+.menu__items a {
+  padding: 8px;
+  margin-right: 15px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__title {
+  margin: 80px 0px 28px 92px;
+  padding: 40px;
+
+  line-height: 78px;
+  text-align: start;
+}
+
+.header__title-characteristic {
+  font-weight: 400;
+}
+
+.header__title-characteristic--adobe {
+  font-size: 5.5rem;
+  font-family: adobe-garamond-pro, serif;
+}
+
+#plus {
+  font-size: 13.4rem;
+  font-family: adobe-garamond-pro, serif;
+}
+
+.line {
+  line-height: 20px;
+}
+
+/*           end section            */
+
+/* second section */
+
+.main {
+  width: 100%;
+  height: auto;
+}
+
+.main__top-page {
+  margin: 70px;
+
+  font-size: 2.3rem;
+
+  font-weight: 500;
+}
+
+.main__data {
+}
+
+.container__text {
+  padding: 30px;
+
+  line-height: 27px;
+}
+
+.main__containers {
+  margin-bottom: 20px;
+}
+
+.main__containers p {
+  font-size: 1.6rem;
+
+  text-align: start;
+}
+
+.main__containers h2 {
+  margin-bottom: 20px;
+
+  font-size: 3.3rem;
+  font-family: adobe-garamond-pro, serif;
+
+  font-weight: 700;
+  text-align: start;
+}
+
+.main__containers img {
+  width: 560px;
+  height: 390px;
+}
+
+.container__the-piture {
+  margin: 20px;
+}
+
+.main__bottom-page {
+  margin: 45px;
+
+  line-height: 24px;
+  text-align: center;
+}
+
+.bottom-page__section1 {
+  font-family: adobe-garamond-pro, serif;
+  font-size: 3.3rem;
+
+  line-height: 68px;
+}
+
+/*          end section                 */
+
+/* third section */
+
+.footer {
+  width: 100%;
+  height: auto;
+
+  font-size: 1.3rem;
+
+  color: #f7f7f7;
+  background-color: #14274a;
+}
+
+.footer__container {
+  text-align: start;
+}
+
+.container__data {
+  font-size: 1rem;
+}
+
+.container__links ul {
+  line-height: 20px;
+  list-style: none;
+}
+
+.container__links ul a {
+  text-decoration: none;
+  color: #f7f7f7;
+}
+
+.container__icons {
+  line-height: 23px;
+}
+
+.container__formulaty form {
+  margin-top: 10px;
+}
+
+.formulaty__input-email {
+  padding: 14px;
+  width: 190px;
+  height: 20px;
+
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border: 2px #e0b973 solid;
+}
+
+.formulaty__input-send {
+  position: relative;
+  right: 4px;
+
+  padding: 7px;
+
+  background-color: #e0b973;
+}
+
+/*            end section                */
