@@ -235,6 +235,11 @@ html {
   line-height: 23px;
 }
 
+.fab {
+  margin-bottom: 8px;
+  font-size: 1.7rem;
+}
+
 .container__formulaty form {
   margin-top: 10px;
 }
