@@ -9,7 +9,7 @@ html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
 
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   color: #14274a;
 }
 /*        End section       */
@@ -25,6 +25,13 @@ html {
   background-position: 20%;
 }
 
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
 .header img {
   margin-left: 92px;
   width: 150px;
@@ -32,6 +39,9 @@ html {
 }
 
 .header__menu {
+  display: flex;
+  justify-content: space-around;
+
   font-size: 1.6rem;
 
   list-style: none;
@@ -46,6 +56,9 @@ html {
 }
 
 .header__title {
+  display: flex;
+  flex-direction: column;
+
   margin: 80px 0px 28px 92px;
   padding: 40px;
 
@@ -81,6 +94,9 @@ html {
 }
 
 .main__top-page {
+  display: flex;
+  justify-content: center;
+
   margin: 70px;
 
   font-size: 2.3rem;
@@ -89,15 +105,22 @@ html {
 }
 
 .main__data {
+  display: flex;
+  flex-direction: column;
 }
 
 .container__text {
+  align-self: center;
+
   padding: 30px;
 
   line-height: 27px;
 }
 
 .main__containers {
+  display: flex;
+  justify-content: center;
+
   margin-bottom: 20px;
 }
 
@@ -116,7 +139,6 @@ html {
 
   font-size: 1.5rem;
 
-  
   text-decoration: none;
   border-radius: 6px;
   background-color: #e0b973;
@@ -153,6 +175,9 @@ html {
 }
 
 .main__bottom-page {
+  display: flex;
+  justify-content: center;
+
   margin: 45px;
 
   line-height: 24px;
@@ -181,6 +206,11 @@ html {
 }
 
 .footer__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  align-items: center;
+
   text-align: start;
 }
 
@@ -199,6 +229,9 @@ html {
 }
 
 .container__icons {
+  display: flex;
+  flex-direction: column;
+
   line-height: 23px;
 }
 
