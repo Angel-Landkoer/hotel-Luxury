@@ -52,44 +52,50 @@
           desk and we will get back to you as soon as possible.
         </p>
       </div>
-      <div class="main__text">
-        <span>497 Evergreen Rd. Roseville, CA 95673</span>
-        <span>Phone: +44 345 678 903</span>
-        <span>Email: luxury_hotels@gmail.com</span>
-      </div>
-      <div class="main__formulary">
-        <form action="">
-          <label for="name">
-            <span>Nombre</span>
+      <div class="main__container">
+        <div class="main__text">
+          <span>497 Evergreen Rd. Roseville, CA 95673</span>
+          <span>Phone: +44 345 678 903</span>
+          <span>Email: luxury_hotels@gmail.com</span>
+        </div>
+        <div class="main__formulary">
+          <form action="">
+            <label for="name">
+              <p>Nombre</p>
+              <input
+                class="formulary__input"
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+              />
+            </label>
+            <label for="email">
+              <p>Email-Address</p>
+              <input
+                class="formulary__input"
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+              />
+            </label>
+            <label for="messege">
+              <p>Messenger</p>
+              <input
+                class="formulary__input form-more"
+                type="text"
+                id="messege"
+                name="messege"
+              />
+            </label>
             <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="coloca tu nombre"
-              autocomplete="name"
+              class="formulary__input form-send"
+              type="submit"
+              value="Submit"
             />
-          </label>
-          <label for="email">
-            <span>Email-Address</span>
-            <input
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              autocomplete="email"
-            />
-          </label>
-          <label for="messege">
-            <span>messege</span>
-            <input
-              type="text"
-              id="messege"
-              name="messege"
-              placeholder="messege"
-            />
-          </label>
-          <input type="submit" value="Submit">
-        </form>
+          </form>
+        </div>
       </div>
     </main>
   </body>
