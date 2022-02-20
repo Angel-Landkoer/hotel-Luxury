@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/contact-us.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/contact-us.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,8 +17,80 @@
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
     />
     <title>Contact-Us</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="../index.html">
+          <figure>
+            <img
+              src="https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/logo.png?raw=true"
+              alt="Esta es el logo del sitio web"
+            />
+          </figure>
+        </a>
+        <ul class="header__menu">
+          <li class="menu__items"><a href="../index.html">Home</a></li>
+          <li class="menu__items">
+            <a href="./facilities.html">Facilities</a>
+          </li>
+          <li class="menu__items"><a href="./rooms.html">Rooms</a></li>
+          <li class="menu__items"><a href="./about.html">About</a></li>
+          <li class="menu__items">
+            <a href="./contact-us.html">Contact-Us</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="header__title">CONTACT-US</h1>
+    </header>
+    <main class="main">
+      <div class="main__top-page">
+        <h2>WE ARE HERE FOR YOU</h2>
+        <p>
+          At Luxury Hotels, we take our customers seriously. Do you have any
+          enquiries, compaints or requests, please forward it to our support
+          desk and we will get back to you as soon as possible.
+        </p>
+      </div>
+      <div class="main__text">
+        <span>497 Evergreen Rd. Roseville, CA 95673</span>
+        <span>Phone: +44 345 678 903</span>
+        <span>Email: luxury_hotels@gmail.com</span>
+      </div>
+      <div class="main__formulary">
+        <form action="">
+          <label for="name">
+            <span>Nombre</span>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="coloca tu nombre"
+              autocomplete="name"
+            />
+          </label>
+          <label for="email">
+            <span>Email-Address</span>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              autocomplete="email"
+            />
+          </label>
+          <label for="messege">
+            <span>messege</span>
+            <input
+              type="text"
+              id="messege"
+              name="messege"
+              placeholder="messege"
+            />
+          </label>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
