@@ -88,6 +88,8 @@ html {
 
 /*     second section     */
 .main {
+  width: 100%;
+  height: auto;
 }
 
 .main__top-page {
