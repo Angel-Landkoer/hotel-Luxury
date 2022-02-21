@@ -1,87 +1,114 @@
 /*        Reset section       */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-    font-family: "Montserrat", sans-serif;
-  
-    background-color: #e5e5e5;
-    color: #14274a;
-  }
-  /*        End section       */
-  
-  /* first section */
-  
-  .header {
-    width: 100%;
-    height: auto;
-  
-    color: #fff;
-    background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--3%20(2).jpg?raw=true");
-    background-position: 20%;
-  }
-  
-  .header__nav {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center;
-  }
-  
-  .header img {
-    margin-left: 92px;
-    width: 150px;
-    height: 90px;
-  }
-  
-  .header__menu {
-    display: flex;
-    justify-content: space-around;
-  
-    font-size: 1.6rem;
-  
-    list-style: none;
-  }
-  
-  .menu__items a {
-    padding: 8px;
-    margin-right: 15px;
-  
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .header__title {
-    display: flex;
-    flex-direction: column;
-  
-    margin: 80px 0px 28px 92px;
-    padding: 40px;
-  
-    line-height: 78px;
-    text-align: start;
-  }
-  
-  .header__title-characteristic {
-    font-weight: 400;
-  }
-  
-  .header__title-characteristic--adobe {
-    font-size: 5.5rem;
-    font-family: adobe-garamond-pro, serif;
-  }
-  
-  #plus {
-    font-size: 13.4rem;
-    font-family: adobe-garamond-pro, serif;
-  }
-  
-  .line {
-    line-height: 20px;
-  }
-  
-  /*           end section            */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+
+  background-color: #e5e5e5;
+  color: #14274a;
+}
+/*        End section       */
+
+/* first section */
+
+.header {
+  width: 100%;
+  height: auto;
+
+  color: #fff;
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--3%20(2).jpg?raw=true");
+  background-position: 20%;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header img {
+  margin-left: 92px;
+  width: 150px;
+  height: 90px;
+}
+
+.header__menu {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 1.6rem;
+
+  list-style: none;
+}
+
+.menu__items a {
+  padding: 8px;
+  margin-right: 15px;
+
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__title {
+  display: flex;
+  flex-direction: column;
+
+  margin: 80px 0px 28px 92px;
+  padding: 40px;
+
+  line-height: 78px;
+  text-align: start;
+}
+
+.header__title-characteristic {
+  font-weight: 400;
+}
+
+.header__title-characteristic--adobe {
+  font-size: 5.5rem;
+  font-family: adobe-garamond-pro, serif;
+}
+
+#plus {
+  font-size: 13.4rem;
+  font-family: adobe-garamond-pro, serif;
+}
+
+.line {
+  line-height: 20px;
+}
+
+/*           end section            */
+
+/*        second section           */
+
+.main {
+  width: 100%;
+  height: 90vh;
+}
+
+.main__top-page {
+  margin-top: 80px;
+
+  text-align: center;
+  line-height: 27px;
+}
+
+.main__top-page h2 {
+  font-size: 4rem;
+  font-family: adobe-garamond-pro, serif;
+}
+
+.main__top-page p {
+  padding: 20px;
+
+  font-size: 1.6rem;
+}
+
+/*         end section          */
