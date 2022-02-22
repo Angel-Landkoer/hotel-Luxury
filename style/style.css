@@ -55,6 +55,10 @@ html {
   text-decoration: none;
 }
 
+.menu__items a:hover {
+  border-bottom: 2px #fff solid;
+}
+
 .header__title {
   display: flex;
   flex-direction: column;
