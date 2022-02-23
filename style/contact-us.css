@@ -139,7 +139,9 @@ html {
   border-radius: 2px;
 }
 
-.main__formulary p {
+.main__formulary span {
+  display: block;
+
   margin-bottom: 10px;
 }
 
