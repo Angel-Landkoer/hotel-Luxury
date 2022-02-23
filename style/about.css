@@ -143,6 +143,10 @@ html {
   color: #f7f7f7;
 }
 
+.container__links ul a:hover {
+  color: #e0b973;
+}
+
 .container__icons {
   display: flex;
   flex-direction: column;
