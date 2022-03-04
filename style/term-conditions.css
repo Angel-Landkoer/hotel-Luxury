@@ -15,7 +15,7 @@ html {
 /*        End section       */
 
 /*          second section           */
-.main {
+.paper {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -43,13 +43,13 @@ html {
   font-size: 1.6rem;
 }
 
-div {
+.main__page div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-div a {
+.main__page div a {
   display: inline-block;
 
   padding: 30px;

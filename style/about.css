@@ -16,12 +16,6 @@ html {
 
 /*       first section      */
 
-.header {
-  width: 100%;
-  height: 47vh;
-
-  background-color: #14274a;
-}
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -29,7 +23,7 @@ html {
   align-items: center;
 }
 
-.header img {
+.header__nav img {
   margin-left: 92px;
   width: 150px;
   height: 90px;
@@ -56,13 +50,11 @@ html {
   border-bottom: 2px #fff solid;
 }
 
-.header__title {
-  display: flex;
-  justify-content: center;
-
+.header__title-bc {
   margin-top: 40px;
 
   font-size: 8rem;
+  text-align: center;
 
   color: #fff;
 }
@@ -70,16 +62,12 @@ html {
 /*           end section            */
 
 /*          second section           */
-.main {
-  width: 100%;
-  height: auto;
-}
 
-.container {
+.about {
   margin-bottom: 70px;
 }
 
-.box {
+.about__information-container {
   width: 1300px;
   height: auto;
   padding: 10px;
@@ -90,7 +78,7 @@ html {
   background-color: #aaa;
 }
 
-.box h2 {
+.about__information-container h2 {
   width: 80px;
   height: 50px;
   margin-bottom: 8px;
@@ -100,7 +88,7 @@ html {
   font-family: adobe-garamond-pro, serif;
 }
 
-.box p {
+.about__information-container p {
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 25px;
@@ -108,17 +96,7 @@ html {
 
 /*         end section            */
 
-/* third section */
-
-.footer {
-  width: 100%;
-  height: auto;
-
-  font-size: 1.3rem;
-
-  color: #f7f7f7;
-  background-color: #14274a;
-}
+/*         third section      */
 
 .footer__container {
   display: flex;
@@ -126,7 +104,13 @@ html {
   flex-direction: row;
   align-items: center;
 
+  padding: 10px;
+
+  font-size: 1.3rem;
   text-align: start;
+
+  color: #f7f7f7;
+  background-color: #14274a;
 }
 
 .container__data {

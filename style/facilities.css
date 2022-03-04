@@ -16,15 +16,6 @@ html {
 
 /* first section */
 
-.header {
-  width: 100%;
-  height: auto;
-
-  color: #fff;
-  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--2%20(2).jpg?raw=true");
-  background-position: 20%;
-}
-
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -32,7 +23,7 @@ html {
   align-items: center;
 }
 
-.header img {
+.header__nav img {
   margin-left: 92px;
   width: 150px;
   height: 90px;
@@ -91,10 +82,6 @@ html {
 /*           end section            */
 
 /*     second section     */
-.main {
-  width: 100%;
-  height: auto;
-}
 
 .main__top-page {
   padding: 20px;
@@ -119,13 +106,13 @@ html {
   font-weight: 500;
 }
 
-.main__container {
+.phone-gallery {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.box {
+.phone-gallery__picture {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -137,7 +124,7 @@ html {
   font-weight: 700;
 }
 
-.box img {
+.phone-gallery__picture img {
   width: 1000px;
   height: 650px;
   border: #14274a 2px solid;
@@ -145,7 +132,7 @@ html {
   border-radius: 6px;
 }
 
-.box div {
+.phone-gallery__picture div {
   position: absolute;
   top: calc(90% + 25px);
 
@@ -154,7 +141,7 @@ html {
   background-color: #fff;
 }
 
-.box div span {
+.phone-gallery__picture div span {
   margin-left: 100px;
   margin-right: 100px;
 }
@@ -180,23 +167,19 @@ html {
 
 /* third section */
 
-.footer {
-  width: 100%;
-  height: auto;
-
-  font-size: 1.3rem;
-
-  color: #f7f7f7;
-  background-color: #14274a;
-}
-
 .footer__container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+  
+  padding: 10px;
 
+  font-size: 1.3rem;
   text-align: start;
+
+  color: #f7f7f7;
+  background-color: #14274a;
 }
 
 .container__data {

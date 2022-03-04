@@ -16,15 +16,6 @@ html {
 
 /* first section */
 
-.header {
-  width: 100%;
-  height: auto;
-
-  color: #fff;
-  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--3%20(2).jpg?raw=true");
-  background-position: 20%;
-}
-
 .header__nav {
   display: flex;
   justify-content: space-between;
@@ -32,7 +23,7 @@ html {
   align-items: center;
 }
 
-.header img {
+.header__nav img {
   margin-left: 92px;
   width: 150px;
   height: 90px;
@@ -91,11 +82,6 @@ html {
 /*           end section            */
 
 /*        second section           */
-
-.main {
-  width: 100%;
-  height: auto;
-}
 
 .main__top-page {
   margin-top: 80px;
@@ -219,23 +205,19 @@ html {
 
 /* third section */
 
-.footer {
-  width: 100%;
-  height: auto;
-
-  font-size: 1.3rem;
-
-  color: #f7f7f7;
-  background-color: #14274a;
-}
-
 .footer__container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
 
+  padding: 10px;
+
+  font-size: 1.3rem;
   text-align: start;
+
+  color: #f7f7f7;
+  background-color: #14274a;
 }
 
 .container__data {
