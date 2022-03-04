@@ -1,4 +1,4 @@
-/*        Reset section       */
+/*      reset styles       */
 * {
   margin: 0;
   padding: 0;
@@ -12,9 +12,17 @@ html {
   background-color: #e5e5e5;
   color: #14274a;
 }
-/*        End section       */
 
-/* first section */
+/*         end          */
+
+/*    home, facilities and rooms: header      */
+
+.header {
+  width: 100%;
+  height: auto;
+
+  color: #fff;
+}
 
 .header__nav {
   display: flex;
@@ -79,26 +87,265 @@ html {
   line-height: 20px;
 }
 
-/*           end section            */
+/*         end           */
 
-/*       second section        */
+/*       about and contact      */
 
+.header__title-bc {
+  margin-top: 40px;
 
-.main__top-page {
+  font-size: 8rem;
+  text-align: center;
+}
+
+/*        end        */
+
+/* Index: services */
+
+.services {
+  width: 100%;
+  height: auto;
+}
+
+/*         end         */
+
+/*   facilities: gallery */
+
+.gallery {
+  width: 100%;
+  height: auto;
+}
+
+/*      end        */
+
+/* Rooms: rooms */
+
+.rooms {
+  width: 100%;
+  height: auto;
+}
+
+/*       end          */
+
+/*    about: about     */
+
+.about {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+}
+
+/*        end        */
+
+/* Contact: contact-us */
+
+.contact-us {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
+  align-items: center;
+
+  height: 100vh;
+  margin: 20px;
+}
+
+/*      end       */
+
+/*       term-coditions: paper        */
+
+.paper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 
-  margin: 70px;
+  padding: 20px;
 
-  font-size: 2.3rem;
+  background-color: #14274a;
+}
 
+/*          end          */
+
+/*    tope del contenido del todos los main de cada pagina       */
+
+.main__top-page {
+  padding: 20px;
+
+  text-align: center;
+  line-height: 27px;
+}
+
+.main__top-page h2 {
+  margin-top: 37px;
+  margin-bottom: 10px;
+
+  font-size: 4rem;
+  font-family: adobe-garamond-pro, serif;
+}
+
+.main__top-page p {
+  padding: 20px;
+  margin-top: 10px;
+
+  font-size: 1.6rem;
   font-weight: 500;
 }
 
-.main__data {
+#reset {
+  margin: 20px;
+  padding: 20px;
+
+  text-align: start;
+}
+
+#reset h2 {
+  margin: 0 0 10px 0;
+}
+
+#reset p {
+  margin: 0;
+  padding: 0;
+}
+
+/*       end       */
+
+/*     index: main__container       */
+
+.main__container {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 20px;
+}
+
+.main__container p {
+  font-size: 1.6rem;
+
+  text-align: start;
+}
+
+.main__container h2 {
+  margin-bottom: 20px;
+
+  font-size: 3.3rem;
+  font-family: adobe-garamond-pro, serif;
+
+  font-weight: 700;
+  text-align: start;
+}
+
+.main__container img {
+  width: 560px;
+  height: 390px;
+}
+
+/*      end        */
+
+/*       facilities: phone-gallery      */
+
+.phone-gallery {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
+
+/*      end       */
+
+/*    rooms: main__rooms-and-rates      */
+
+.main__room-and-rates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 70px;
+}
+
+.main__room-and-rates figure {
+  width: 800px;
+  height: 700px;
+}
+
+.main__room-and-rates img {
+  width: 800px;
+  height: 700px;
+
+  border-radius: 10px 10px 0 0;
+}
+
+/*       end      */
+
+/*     about: about__information-container     */
+
+.about__information-container {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 20px;
+
+  border-radius: 10px;
+  background-color: #aaa;
+}
+
+.about__information-container h2 {
+  width: 80px;
+  height: 50px;
+  margin-bottom: 8px;
+
+  text-align: center;
+  font-size: 3.3rem;
+  font-family: adobe-garamond-pro, serif;
+}
+
+.about__information-container p {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+/*        end      */
+
+/*        contact: main__text       */
+
+.main__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 20px;
+  margin: 20px;
+
+  font-size: 1.8rem;
+  line-height: 50px;
+}
+
+/*      end       */
+
+/*       term-coditions: main__page        */
+
+.main__page {
+  padding: 20px;
+  width: 1000px;
+
+  border-radius: 15px;
+  background-color: #e5e5e5;
+}
+
+.main__page h1 {
+  font-size: 8rem;
+  text-align: center;
+}
+
+.main__page p {
+  margin: 20px;
+
+  font-size: 1.6rem;
+}
+
+/*          end          */
+
+/*       index: container__text        */
 
 .container__text {
   align-self: center;
@@ -108,12 +355,91 @@ html {
   line-height: 27px;
 }
 
-.main__container {
+/*        end        */
+
+/*       facilities: phone-gallery__picture        */
+
+.phone-gallery__picture {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+
+  margin-bottom: 50px;
+
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.phone-gallery__picture img {
+  width: 1000px;
+  height: 650px;
+  border: #14274a 2px solid;
+
+  border-radius: 6px;
+}
+
+.phone-gallery__picture div {
+  position: absolute;
+  top: calc(90% + 25px);
+
+  width: 300px;
+  height: 45px;
+  padding: 5px;
+
+  text-align: center;
+
+  background-color: #fff;
+}
+
+/*        end        */
+
+/*       rooms: room-and__room-types      */
+
+.room-and-rates__room-types {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  align-items: center;
 
-  margin-bottom: 20px;
+  width: 800px;
+  height: 70px;
+
+  background-color: #14274a;
 }
+
+.room-and-rates__room-types span {
+  font-size: 3.3rem;
+
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/*        end      */
+
+/*       contact: main__fotmulary      */
+
+.main__formulary form {
+  display: flex;
+  flex-direction: column;
+
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.main__formulary form label {
+  margin-bottom: 10px;
+}
+
+.main__formulary span {
+  display: block;
+
+  margin-bottom: 10px;
+}
+
+/*       end      */
+
+/*       index: container__anchor-more       */
 
 .container__anchor-more {
   margin-top: 34px;
@@ -140,30 +466,92 @@ html {
   background-color: #cea456;
 }
 
-.main__container p {
-  font-size: 1.6rem;
+/*        end        */
 
-  text-align: start;
+/*        rooms: room-and-rates__rates      */
+
+.room-and-rates__rates {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+
+  width: 800px;
+  height: 90px;
+  border: 1px #14274a solid;
+
+  border-radius: 0px 0px 10px 10px;
 }
 
-.main__container h2 {
-  margin-bottom: 20px;
+.room-and-rates__rates button {
+  width: 140px;
+  height: 45px;
+  margin-right: 50px;
 
-  font-size: 3.3rem;
-  font-family: adobe-garamond-pro, serif;
+  border-radius: 8px;
+  color: #ffffff;
+  background-color: #e0b973;
+}
 
+/*        end      */
+
+/*     contact: formulary__input, form-more and form-send  */
+
+.formulary__input {
+  width: 250px;
+  height: 34px;
+  border: 1px #aaa solid;
+
+  outline: none;
+
+  border-radius: 2px;
+}
+
+.form-more {
+  height: 100px;
+}
+
+.form-send {
+  align-self: flex-end;
+
+  width: 90px;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+
+  border-radius: 3px;
+  background-color: #e0b973;
+  color: #ffff;
+}
+
+/*       end        */
+
+/*      rooms: rates__text-picture    */
+
+.rates__text-picture {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  padding: 20px;
+}
+
+.rates__text-picture span {
+  margin-left: 10px;
   font-weight: 700;
-  text-align: start;
 }
 
-.main__container img {
-  width: 560px;
-  height: 390px;
+.rates__text-picture .fa-solid svg {
+  width: 26px;
+  height: 26px;
+  margin-left: 40px;
+
+  color: #e0b973;
 }
 
-.container__the-piture {
-  margin: 20px;
-}
+/*          end          */
+
+/*      index, facilities and rooms: main__bottom-page and bottom-page__section1 */
 
 .main__bottom-page {
   display: flex;
@@ -182,15 +570,42 @@ html {
   line-height: 68px;
 }
 
-/*          end section                 */
+/*          end        */
 
-/*     third section       */
+/*        term-codition: container__anchor       */
+.container__anchor {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container__anchor .anchor {
+  display: inline-block;
+
+  padding: 30px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  font-size: 1.6rem;
+
+  background-color: #e0b973;
+  color: #14274a;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+/*            end            */
+
+/*     footer all pages     */
 
 .footer__container {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
   align-items: center;
+
+  width: 100%;
+  height: auto;
 
   padding: 10px;
 
