@@ -43,13 +43,13 @@ html {
   font-size: 1.6rem;
 }
 
-.main__page div {
+.container__anchor {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.main__page div a {
+.anchor {
   display: inline-block;
 
   padding: 30px;
