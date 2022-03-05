@@ -15,6 +15,29 @@ html {
 
 /*         end          */
 
+/*          grid layout      */
+.grid-layout {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+}
+
+header {
+grid-area: header;
+}
+
+main {
+grid-area: main;
+}
+
+footer {
+grid-area: footer;
+}
+
+/*            end        */
+
 /*  espacio para especificar todo el contenido del header   home, facilities, rooms, about and contact-us : header   */
 
 .header__nav {
