@@ -15,14 +15,7 @@ html {
 
 /*         end          */
 
-/*    home, facilities and rooms: header      */
-
-.header {
-  width: 100%;
-  height: auto;
-
-  color: #fff;
-}
+/*  espacio para especificar todo el contenido del header   home, facilities, rooms, about and contact-us : header   */
 
 .header__nav {
   display: flex;
@@ -189,6 +182,12 @@ html {
 
   font-size: 1.6rem;
   font-weight: 500;
+}
+
+#size {
+  margin: 70px 0;
+
+  font-size: 2rem;
 }
 
 #reset {
