@@ -322,7 +322,7 @@ html {
 
 /*      end       */
 
-/*       term-coditions: main__page        */
+/*       term-conditions: main__page        */
 
 .main__page {
   padding: 20px;
@@ -335,6 +335,8 @@ html {
 .main__page h1 {
   font-size: 8rem;
   text-align: center;
+
+  color: black;
 }
 
 .main__page p {
