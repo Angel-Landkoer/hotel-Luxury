@@ -257,12 +257,6 @@ footer {
   font-weight: 700;
   text-align: start;
 }
-
-.main__container img {
-  width: 560px;
-  height: 390px;
-}
-
 /*      end        */
 
 /*       facilities: phone-gallery      */
@@ -376,10 +370,14 @@ footer {
 .container__text {
   align-self: center;
 
-  padding: 30px;
+  padding: 60px;
 
   line-height: 27px;
 }
+
+/* .container__text:hover {
+  padding: 60px;
+} */
 
 /*        end        */
 
@@ -403,6 +401,12 @@ footer {
   border: #14274a 2px solid;
 
   border-radius: 6px;
+  transition: width 2s linear, height 2s linear;
+}
+
+.phone-gallery__picture img:hover {
+  width: 700px;
+  height: 450px;
 }
 
 .phone-gallery__picture div {
@@ -486,9 +490,12 @@ footer {
   border-radius: 6px;
   background-color: #e0b973;
   color: #f7f7f7;
+  transition: transform 888ms ease-in-out;
 }
 
 .container__anchor-more a:hover {
+  transform: scale(1.3, 1.2);
+
   background-color: #cea456;
 }
 
@@ -517,6 +524,14 @@ footer {
   border-radius: 8px;
   color: #ffffff;
   background-color: #e0b973;
+  transition: width 2s linear, height 2s linear, border-raduis 2s linear;
+}
+
+.room-and-rates__rates button:hover {
+  width: 190px;
+  height: 60px;
+
+  border-radius: 4px;
 }
 
 /*        end      */
@@ -577,7 +592,29 @@ footer {
 
 /*          end          */
 
-/*      index, facilities and rooms: main__bottom-page and bottom-page__section1 */
+/*      index: container__the-picture     */
+
+.container__the-piture {
+  width: auto;
+  height: 390px;
+}
+
+.container__the-piture img {
+  width: 560px;
+  height: 390px;
+
+  transition: width 1s linear, height 2s linear, transform 1s linear;
+}
+
+.container__the-piture img:hover {
+  width: 500px;
+  height: 360px;
+  transform: translateX(-40px);
+}
+
+/*              end         */
+
+/*      index, facilities and rooms: main__bottom-page and bottom-page__section1    */
 
 .main__bottom-page {
   display: flex;
@@ -599,6 +636,7 @@ footer {
 /*          end        */
 
 /*        term-codition: container__anchor       */
+
 .container__anchor {
   display: flex;
   justify-content: space-between;
@@ -606,8 +644,6 @@ footer {
 }
 
 .container__anchor .anchor {
-  display: inline-block;
-
   padding: 30px;
   margin-left: 50px;
   margin-right: 50px;
@@ -618,6 +654,45 @@ footer {
   color: #14274a;
   text-decoration: none;
   border-radius: 10px;
+}
+
+.anchor:hover {
+  animation: rotando 1.7s;
+}
+
+@keyframes rotando {
+  0% {
+    transform: rotate(1turn);
+    border: 1px #1a1a1a solid;
+  }
+
+  20% {
+    transform: rotate(1.2turn);
+    border: 1px #262626 solid;
+  }
+
+  40% {
+    transform: rotate(1.4turn);
+    border: 1px #333333 solid;
+  }
+
+  60% {
+    transform: rotate(1.6turn);
+    border: 1px #404040 solid;
+  }
+  80% {
+    transform: rotate(1.8turn);
+    border: 1px #4d4d4d solid;
+  }
+
+  100% {
+    transform: rotate(2turn);
+    border: 1px #595959 solid;
+  }
+}
+
+.anchor:active {
+  border: 1px rgb(112, 112, 112) solid;
 }
 
 /*            end            */
@@ -761,6 +836,9 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: row;
+
+    width: 100%;
+    height: auto;
   }
 
   .container__text {
@@ -768,6 +846,8 @@ footer {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
+    padding: 30px;
 
     text-align: center;
     line-height: 15px;
@@ -790,10 +870,25 @@ footer {
   .container__the-piture img {
     width: 100%;
     height: auto;
+    transition: none;
+  }
+
+  .container__the-piture img:hover {
+    width: 100%;
+    height: auto;
+    transform: none;
   }
 
   .container__anchor-more {
     margin: 10px 0;
+  }
+
+  .container__anchor-more a {
+    transition: none;
+  }
+
+  .container__anchor-more a:hover {
+    transform: none;
   }
 
   .main__bottom-page {
@@ -954,6 +1049,13 @@ footer {
   .phone-gallery__picture img {
     width: 90%;
     height: auto;
+
+    transition: none;
+  }
+
+  .phone-gallery__picture img:hover {
+    width: 90%;
+    height: auto;
   }
 
   .phone-gallery__picture div {
@@ -1108,12 +1210,12 @@ footer {
 
   .main__room-and-rates figure {
     width: 95vw;
-    height: 55vh;
+    height: 50vh;
   }
 
   .main__room-and-rates img {
     width: 95vw;
-    height: 55vh;
+    height: 50vh;
   }
 
   .room-and-rates__room-types {
@@ -1146,6 +1248,13 @@ footer {
     margin-right: 15px;
 
     font-size: 1.2rem;
+
+    transition: none;
+  }
+
+  .room-and-rates__rates button:hover {
+    width: 30%;
+    height: 43px;
   }
 
   .main__bottom-page {
@@ -1371,7 +1480,6 @@ footer {
 /*            contact - Mobile         */
 
 @media (min-width: 320px) and (max-width: 580px) {
-
   /*     first section        */
 
   .header__nav img {
@@ -1410,7 +1518,6 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    
 
     font-size: 1.6rem;
   }
@@ -1537,6 +1644,10 @@ footer {
 
     font-size: 1.2rem;
     font-weight: 500;
+  }
+
+  .anchor:hover {
+    animation: none;
   }
 
   #more {

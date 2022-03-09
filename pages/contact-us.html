@@ -11,7 +11,17 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- animacion -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <!-- animaciones -->
     <link rel="stylesheet" href="https://use.typekit.net/ozg1wfi.css" />
+
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
@@ -22,37 +32,45 @@
     <div class="grid-layout">
       <header style="height: 47vh; background-color: #14274a">
         <nav class="header__nav">
-          <a href="../index.html">
-            <figure>
-              <img
-                src="https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/logo.png?raw=true"
-                alt="Esta es el logo del sitio web"
-              />
-            </figure>
-          </a>
-          <ul class="header__menu">
-            <li class="menu__items"><a href="../index.html">Home</a></li>
-            <li class="menu__items">
-              <a href="./facilities.html">Facilities</a>
-            </li>
-            <li class="menu__items"><a href="./rooms.html">Rooms</a></li>
-            <li class="menu__items"><a href="./about.html">About</a></li>
-            <li class="menu__items">
-              <a href="./contact-us.html">Contact-Us</a>
-            </li>
-          </ul>
+          <div data-aos="fade-right">
+            <a href="../index.html">
+              <figure>
+                <img
+                  src="https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/logo.png?raw=true"
+                  alt="Esta es el logo del sitio web"
+                />
+              </figure>
+            </a>
+          </div>
+          <div data-aos="fade-left">
+            <ul class="header__menu">
+              <li class="menu__items"><a href="../index.html">Home</a></li>
+              <li class="menu__items">
+                <a href="./facilities.html">Facilities</a>
+              </li>
+              <li class="menu__items"><a href="./rooms.html">Rooms</a></li>
+              <li class="menu__items"><a href="./about.html">About</a></li>
+              <li class="menu__items">
+                <a href="./contact-us.html">Contact-Us</a>
+              </li>
+            </ul>
+          </div>
         </nav>
-        <h1 class="header__title-bc">CONTACT-US</h1>
+        <h1 class="header__title-bc animate__pulse animate__animated">
+          CONTACT-US
+        </h1>
       </header>
       <main>
         <section class="contact-us">
-          <div class="main__top-page" id="reset">
-            <h2>WE ARE HERE FOR YOU</h2>
-            <p>
-              At Luxury Hotels, we take our customers seriously. Do you have any
-              enquiries, compaints or requests, please forward it to our support
-              desk and we will get back to you as soon as possible.
-            </p>
+          <div data-aos="fade-right">
+            <div class="main__top-page" id="reset">
+              <h2>WE ARE HERE FOR YOU</h2>
+              <p>
+                At Luxury Hotels, we take our customers seriously. Do you have
+                any enquiries, compaints or requests, please forward it to our
+                support desk and we will get back to you as soon as possible.
+              </p>
+            </div>
           </div>
           <div class="main__text">
             <span>497 Evergreen Rd. Roseville, CA 95673</span>
@@ -144,5 +162,9 @@
         </div>
       </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
