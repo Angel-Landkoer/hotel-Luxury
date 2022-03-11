@@ -179,7 +179,7 @@
 
         text-align: center;
 
-        background-color: #fff
+        background-color: #fff;
       }
     }
   }
@@ -201,6 +201,8 @@
   }
   //          end
 }
+
+// Rooms: main
 
 .rooms {
   .main__top-page {
@@ -324,6 +326,8 @@
   //          end
 }
 
+// About: main
+
 .about {
   width: 100%;
   height: auto;
@@ -356,10 +360,11 @@
   }
 }
 
+// Contact: main
 
 .contact-us {
   @include flex(row, space-around, center, wrap);
-  
+
   height: 100vh;
   margin-bottom: 50px;
 
@@ -453,6 +458,93 @@
 
     & .form-more {
       height: 100px;
+    }
+  }
+}
+
+// Term-conditions: main
+
+.paper {
+  @include flex(column, center, center, nowrap);
+
+  padding: 20px;
+
+  background-color: $secondarbackground;
+
+  .main__page {
+    padding: 20px;
+    width: 1000px;
+
+    border-radius: 15px;
+    background-color: $primarybackground;
+
+    & h1 {
+      font-size: 8rem;
+      text-align: center;
+
+      color: black;
+    }
+
+    & p {
+      margin: 20px;
+
+      font-size: $defaultFont-size;
+    }
+  }
+
+  .container__anchor {
+    @include flex(row, space-between, center, nowrap);
+
+    & .anchor {
+      padding: 30px;
+      margin-left: 50px;
+      margin-right: 50px;
+
+      font-size: $defaultFont-size;
+
+      background-color: $tertiarybackground;
+      color: $primaryColor;
+      text-decoration: none;
+      border-radius: 10px;
+    }
+
+    & .anchor:hover {
+      animation: rotando 1.7s;
+    }
+
+    @keyframes rotando {
+      0% {
+        transform: rotate(1turn);
+        border: 1px #1a1a1a solid;
+      }
+
+      20% {
+        transform: rotate(1.2turn);
+        border: 1px #262626 solid;
+      }
+
+      40% {
+        transform: rotate(1.4turn);
+        border: 1px #333333 solid;
+      }
+
+      60% {
+        transform: rotate(1.6turn);
+        border: 1px #404040 solid;
+      }
+      80% {
+        transform: rotate(1.8turn);
+        border: 1px #4d4d4d solid;
+      }
+
+      100% {
+        transform: rotate(2turn);
+        border: 1px #595959 solid;
+      }
+    }
+
+    & .anchor:active {
+      border: 1px rgb(112, 112, 112) solid;
     }
   }
 }
