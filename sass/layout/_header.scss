@@ -68,3 +68,51 @@
 
   color: $secondaryColor;
 }
+
+@media (min-width: 320px) and (max-width: 580px) {
+  //      header section
+
+  .header__nav {
+    & img {
+      width: 125px;
+      height: 85px;
+      margin-left: 30px;
+      margin-bottom: 60px;
+    }
+
+    .header__menu {
+      @include flex(column, center, center, nowrap);
+
+      margin-right: 20px;
+      padding: 10px;
+    }
+  }
+
+  .header__title {
+    @include flex(column, center, flex-start, nowrap);
+
+    padding: 0;
+    margin: 50px 0px 28px 10px;
+
+    line-height: 25px;
+
+    .header__title-characteristic--adobe {
+      font-size: 3.7rem;
+
+      line-height: 36px;
+    }
+
+    #plus {
+      font-size: 5rem;
+    }
+  }
+
+  .header__title-bc {
+    font-size: 5rem;
+    font-family: adobe-garamond-pro, serif;
+
+    color: #fff;
+  }
+
+  //      end section
+}

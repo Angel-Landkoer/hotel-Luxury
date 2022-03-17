@@ -68,3 +68,60 @@
     }
   }
 }
+
+@media (min-width: 320px) and (max-width: 580px) {
+  //    footer section
+
+  .footer__container {
+    @include flex(column, center, center, nowrap);
+
+    .container__data {
+      display: none;
+    }
+
+    .container__links {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      order: 3;
+
+      & ul {
+        @include flex(row, center, center, wrap);
+      }
+
+      & ul a {
+        padding: 1px;
+        margin: 5px;
+      }
+    }
+
+    .container__icons {
+      @include flex(row, space-evenly, center, nowrap);
+
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      order: 1;
+
+      & .fab {
+        margin: 5px 10px 5px 10px;
+
+        & span {
+          display: none;
+        }
+      }
+    }
+
+    .container__formulaty {
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      order: 2;
+
+      & span {
+        display: none;
+      }
+    }
+  }
+}
+//        end section
