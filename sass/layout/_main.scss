@@ -492,61 +492,60 @@
 
       font-size: $defaultFont-size;
     }
-  }
+    .container__anchor {
+      @include flex(row, space-between, center, nowrap);
 
-  .container__anchor {
-    @include flex(row, space-between, center, nowrap);
+      & .anchor {
+        padding: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
 
-    & .anchor {
-      padding: 30px;
-      margin-left: 50px;
-      margin-right: 50px;
+        font-size: $defaultFont-size;
 
-      font-size: $defaultFont-size;
-
-      background-color: $tertiarybackground;
-      color: $primaryColor;
-      text-decoration: none;
-      border-radius: 10px;
-    }
-
-    & .anchor:hover {
-      animation: rotando 1.7s;
-    }
-
-    @keyframes rotando {
-      0% {
-        transform: rotate(1turn);
-        border: 1px #1a1a1a solid;
+        background-color: $tertiarybackground;
+        color: $primaryColor;
+        text-decoration: none;
+        border-radius: 10px;
       }
 
-      20% {
-        transform: rotate(1.2turn);
-        border: 1px #262626 solid;
+      & .anchor:hover {
+        animation: rotando 1.7s;
       }
 
-      40% {
-        transform: rotate(1.4turn);
-        border: 1px #333333 solid;
+      @keyframes rotando {
+        0% {
+          transform: rotate(1turn);
+          border: 1px #1a1a1a solid;
+        }
+
+        20% {
+          transform: rotate(1.2turn);
+          border: 1px #262626 solid;
+        }
+
+        40% {
+          transform: rotate(1.4turn);
+          border: 1px #333333 solid;
+        }
+
+        60% {
+          transform: rotate(1.6turn);
+          border: 1px #404040 solid;
+        }
+        80% {
+          transform: rotate(1.8turn);
+          border: 1px #4d4d4d solid;
+        }
+
+        100% {
+          transform: rotate(2turn);
+          border: 1px #595959 solid;
+        }
       }
 
-      60% {
-        transform: rotate(1.6turn);
-        border: 1px #404040 solid;
+      & .anchor:active {
+        border: 1px rgb(112, 112, 112) solid;
       }
-      80% {
-        transform: rotate(1.8turn);
-        border: 1px #4d4d4d solid;
-      }
-
-      100% {
-        transform: rotate(2turn);
-        border: 1px #595959 solid;
-      }
-    }
-
-    & .anchor:active {
-      border: 1px rgb(112, 112, 112) solid;
     }
   }
 }
@@ -778,4 +777,45 @@
       }
     }
   }
+
+  //   Term-conditions: main section
+
+  .paper {
+    .main__page {
+      width: 100%;
+      height: auto;
+
+      & h1 {
+        font-size: 3rem;
+        font-family: adobe-garamond-pro, serif;
+      }
+
+      & p {
+        margin: 20px;
+
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .container__anchor {
+        @include flex(row, center, center, nowrap);
+
+        & .anchor {
+          padding: 20px;
+
+          font-size: 1.2rem;
+          font-weight: 500;
+
+          &:hover {
+            animation: none;
+          }
+        }
+
+        & #more {
+          display: none;
+        }
+      }
+    }
+  }
+  //            end
 }
