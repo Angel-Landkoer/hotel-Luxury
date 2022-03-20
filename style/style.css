@@ -775,8 +775,6 @@ footer {
 /*              Responsive design           */
 
 @media (min-width: 320px) and (max-width: 580px) {
-  /*              index- mobile           */
-
   /*    header       */
 
   .header__nav img {
@@ -826,7 +824,7 @@ footer {
 
   /*      end section     */
 
-  /*       Main         */
+  /*    tope del contenido del todos los main de cada pagina       */
 
   .main__top-page {
     font-size: 1.6rem;
@@ -854,6 +852,12 @@ footer {
   #reset h2 {
     margin-bottom: 20px;
   }
+
+  /*      end        */
+
+  /*       Main         */
+
+  /*        Index: main    */
 
   .main__container {
     display: flex;
@@ -920,6 +924,181 @@ footer {
     transform: none;
   }
 
+  /*      index: end section */
+
+  /*       facilities: Main        */
+
+  .phone-gallery {
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    height: auto;
+  }
+
+  .phone-gallery__picture figure {
+    display: flex;
+    justify-content: center;
+  }
+
+  .phone-gallery__picture img {
+    width: 90%;
+    height: auto;
+
+    transition: none;
+  }
+
+  .phone-gallery__picture img:hover {
+    width: 90%;
+    height: auto;
+  }
+
+  .phone-gallery__picture div {
+    transform: translate(5px, -32px);
+
+    width: 50%;
+
+    border-radius: 5px;
+  }
+
+  .phone-gallery__picture div span {
+    font-size: 1.4rem;
+  }
+  /*          Facilities end section      */
+
+  /*     rooms: Main       */
+
+  .main__room-and-rates {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main__room-and-rates figure {
+    width: 95vw;
+    height: 50vh;
+  }
+
+  .main__room-and-rates img {
+    width: 95vw;
+    height: 50vh;
+  }
+
+  .room-and-rates__room-types {
+    width: 95vw;
+    height: 55px;
+
+    background-color: #14274a;
+  }
+
+  .room-and-rates__room-types span {
+    font-size: 2.3rem;
+  }
+
+  .room-and-rates__rates {
+    width: 95vw;
+    height: auto;
+  }
+
+  .fa-solid svg {
+    margin-left: 10px;
+  }
+
+  .rates__text-picture span {
+    display: none;
+  }
+
+  .room-and-rates__rates button {
+    width: 30%;
+    height: 43px;
+    margin-right: 15px;
+
+    font-size: 1.2rem;
+
+    transition: none;
+  }
+
+  .room-and-rates__rates button:hover {
+    width: 30%;
+    height: 43px;
+  }
+
+  /*      Rooms :end section      */
+
+  /*        about: Main        */
+
+  .about {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about__information-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+
+    margin: 15px;
+  }
+
+  /*       about :end section     */
+
+  /*      contact: Main        */
+
+  .contact-us {
+    display: flex;
+    flex-flow: column nowrap;
+
+    height: auto;
+  }
+
+  /*      contact: end section      */
+
+  /*       term-conditions: Main        */
+
+  .main__page {
+    width: 100%;
+    height: auto;
+  }
+
+  .main__page h1 {
+    font-size: 3rem;
+    font-family: adobe-garamond-pro, serif;
+  }
+
+  .main__page p {
+    margin: 20px;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .container__anchor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container__anchor .anchor {
+    padding: 20px;
+
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .anchor:hover {
+    animation: none;
+  }
+
+  #more {
+    display: none;
+  }
+
+  /*           term-conditions: end section         */
+
+  /*      index, facilities and rooms: main__bottom-page and bottom-page__section1    */
+
   .main__bottom-page {
     margin: 45px;
 
@@ -930,7 +1109,9 @@ footer {
     line-height: 60px;
   }
 
-  /*      end section        */
+  /*        end    main__bottom-page */
+
+  /*     Main :end section        */
 
   /*       Footer        */
 
@@ -996,203 +1177,5 @@ footer {
     display: none;
   }
 
-  /*       end section      */
-
-  /*          facilities - Mobile        */
-
-  /*        Main        */
-
-  .phone-gallery {
-    display: flex;
-    justify-content: center;
-
-    width: 100%;
-    height: auto;
-  }
-
-  .phone-gallery__picture figure {
-    display: flex;
-    justify-content: center;
-  }
-
-  .phone-gallery__picture img {
-    width: 90%;
-    height: auto;
-
-    transition: none;
-  }
-
-  .phone-gallery__picture img:hover {
-    width: 90%;
-    height: auto;
-  }
-
-  .phone-gallery__picture div {
-    transform: translate(5px, -32px);
-
-    width: 50%;
-
-    border-radius: 5px;
-  }
-
-  .phone-gallery__picture div span {
-    font-size: 1.4rem;
-  }
-
-  .main__bottom-page {
-    font-size: 1rem;
-  }
-
-  .bottom-page__section1 {
-    line-height: 60px;
-  }
-
-  /*           end section      */
-
-  /*          rooms - Mobile      */
-
-  /*      Main       */
-
-  .main__room-and-rates {
-    display: flex;
-    justify-content: center;
-  }
-
-  .main__room-and-rates figure {
-    width: 95vw;
-    height: 50vh;
-  }
-
-  .main__room-and-rates img {
-    width: 95vw;
-    height: 50vh;
-  }
-
-  .room-and-rates__room-types {
-    width: 95vw;
-    height: 55px;
-
-    background-color: #14274a;
-  }
-
-  .room-and-rates__room-types span {
-    font-size: 2.3rem;
-  }
-
-  .room-and-rates__rates {
-    width: 95vw;
-    height: auto;
-  }
-
-  .fa-solid svg {
-    margin-left: 10px;
-  }
-
-  .rates__text-picture span {
-    display: none;
-  }
-
-  .room-and-rates__rates button {
-    width: 30%;
-    height: 43px;
-    margin-right: 15px;
-
-    font-size: 1.2rem;
-
-    transition: none;
-  }
-
-  .room-and-rates__rates button:hover {
-    width: 30%;
-    height: 43px;
-  }
-
-  .main__bottom-page {
-    font-size: 1rem;
-  }
-
-  .bottom-page__section1 {
-    line-height: 60px;
-  }
-
-  /*       end section      */
-
-  /*              about - Mobile         */
-
-  /*          Main        */
-
-  .about {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .about__information-container {
-    display: flex;
-    justify-content: center;
-    flex-flow: column wrap;
-    align-items: center;
-
-    margin: 15px;
-  }
-
-  /*        end section     */
-
-  /*            contact - Mobile         */
-
-  /*       Main        */
-
-  .contact-us {
-    display: flex;
-    flex-flow: column nowrap;
-
-    height: auto;
-  }
-
-  /*       end section      */
-
-  /*            term-conditions - Mobile         */
-
-  /*        Main        */
-
-  .main__page {
-    width: 100%;
-    height: auto;
-  }
-
-  .main__page h1 {
-    font-size: 3rem;
-    font-family: adobe-garamond-pro, serif;
-  }
-
-  .main__page p {
-    margin: 20px;
-
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-
-  .container__anchor {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .container__anchor .anchor {
-    padding: 20px;
-
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-
-  .anchor:hover {
-    animation: none;
-  }
-
-  #more {
-    display: none;
-  }
-
-  /*            end section         */
+  /*      Footer: end section      */
 }
