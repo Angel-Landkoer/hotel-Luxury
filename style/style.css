@@ -999,12 +999,16 @@ footer {
     height: auto;
   }
 
-  .fa-solid svg {
-    margin-left: 10px;
-  }
-
   .rates__text-picture span {
     display: none;
+  }
+
+  .rates__text-picture a i {
+    margin-left: 40px;
+
+    font-size: 2.6rem;
+
+    color: #dba849;
   }
 
   .room-and-rates__rates button {
