@@ -40,7 +40,16 @@
               </figure>
             </a>
           </div>
-          <div data-aos="fade-left">
+          <div class="toggle-open">
+            <button class="button-reset" onclick="toggleMenu()">
+              <i class="fa-solid fa-bars fs3-icon"></i>
+            </button>
+          </div>
+          <div class="toggle-close">
+            <button class="button-reset" onclick="toggleMenu()">
+              <i class="fa-solid fa-xmark fs5-icon"></i>
+            </button>
+
             <ul class="header__menu">
               <li class="menu__items"><a href="../index.html">Home</a></li>
               <li class="menu__items">
@@ -201,6 +210,7 @@
         </div>
       </footer>
     </div>
+    <script src="../index.js"></script>
     <script
       src="https://kit.fontawesome.com/e0213a951d.js"
       crossorigin="anonymous"
