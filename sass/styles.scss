@@ -1,0 +1,20 @@
+//baserules
+@import "./baserules/reset";
+
+//variables
+@import "./lib/variables";
+
+// extands
+@import "./lib/extends";
+
+//mixins
+@import "./lib/mixins"; 
+
+// header
+@import "./layout/header";
+
+// main
+@import "./layout/main";
+
+// footer
+@import "./layout/footer";

@@ -1,0 +1,820 @@
+// Index: main
+
+.services {
+  width: 100%;
+  height: auto;
+
+  .main__top-page {
+    padding: 20px;
+
+    text-align: center;
+    line-height: 27px;
+  }
+
+  #size {
+    margin: 70px 0;
+    font-size: 2rem;
+  }
+
+  .main__data {
+    .main__container {
+      @include flex(row, center, center, nowrap);
+
+      margin-bottom: 20px;
+
+      & p {
+        font-size: $defaultFont-size;
+
+        text-align: start;
+      }
+
+      & h2 {
+        margin-bottom: 20px;
+
+        font-size: $defaultFont-size-bottom-page-etc;
+        font-family: adobe-garamond-pro, serif;
+        font-weight: $thirdLevel;
+
+        text-align: start;
+      }
+
+      .container__text {
+        align-self: center;
+
+        padding: 60px;
+
+        line-height: 27px;
+
+        .container__anchor-more {
+          margin-top: 34px;
+
+          text-align: center;
+
+          & a {
+            display: inline-block;
+
+            padding: 10px;
+            width: 100px;
+            border: none;
+
+            font-size: 1.5rem;
+
+            text-decoration: none;
+            border-radius: 6px;
+            color: $secondaryColor;
+            background-color: $tertiarybackground;
+            transition: transform 888ms ease-in-out;
+          }
+
+          & a:hover {
+            transform: scale(1.3, 1.2);
+            background-color: #cea456;
+          }
+        }
+      }
+
+      .container__the-piture {
+        width: auto;
+        height: 390px;
+
+        & img {
+          width: 560px;
+          height: 390px;
+
+          transition: width 1s linear, height 2s linear, transform 1s linear;
+        }
+        & img:hover {
+          width: 500px;
+          height: 360px;
+          transform: translateX(-40px);
+        }
+      }
+    }
+  }
+  //      index, facilities and rooms: main__bottom-page and bottom-page__section1
+  .main__bottom-page {
+    @include flex(row, center, center, nowrap);
+
+    margin: 45px;
+
+    line-height: 24px;
+    text-align: center;
+
+    .bottom-page__section1 {
+      font-family: adobe-garamond-pro, serif;
+      font-size: $defaultFont-size-bottom-page-etc;
+
+      line-height: 68px;
+    }
+  }
+  //          end
+}
+
+// facilities: main
+
+.gallery {
+  width: 100%;
+  height: auto;
+
+  //   tope del contenido del todos los main de cada pagina
+
+  .main__top-page {
+    padding: 20px;
+
+    text-align: center;
+    line-height: 27px;
+
+    & h2 {
+      margin-top: 37px;
+      margin-bottom: 10px;
+
+      font-size: $defaultFont-size-bottom-page-etc;
+      font-family: adobe-garamond-pro, serif;
+    }
+
+    & p {
+      padding: 20px;
+      margin-top: 10px;
+
+      font-size: $defaultFont-size;
+      font-weight: $secondLevel;
+    }
+  }
+
+  //            end
+
+  .phone-gallery {
+    @include flex(column, center, center, nowrap);
+
+    .phone-gallery__picture {
+      @include flex(column, center, center, nowrap);
+      position: relative;
+
+      margin-bottom: 50px;
+
+      font-size: 2.5rem;
+      font-weight: $thirdLevel;
+
+      & img {
+        width: 1000px;
+        height: 650px;
+        border: 2px $primaryColor solid;
+
+        border-radius: 6px;
+        transition: width 2s linear, height 2s linear;
+      }
+
+      & img:hover {
+        width: 700px;
+        height: 450px;
+      }
+
+      & div {
+        position: absolute;
+        top: calc(90% + 25px);
+
+        width: 300px;
+        height: 45px;
+        padding: 5px;
+
+        text-align: center;
+
+        background-color: #fff;
+      }
+    }
+  }
+  //      index, facilities and rooms: main__bottom-page and bottom-page__section1
+  .main__bottom-page {
+    @include flex(row, center, center, nowrap);
+
+    margin: 45px;
+
+    line-height: 24px;
+    text-align: center;
+
+    .bottom-page__section1 {
+      font-family: adobe-garamond-pro, serif;
+      font-size: $defaultFont-size-bottom-page-etc;
+
+      line-height: 68px;
+    }
+  }
+  //          end
+}
+
+// Rooms: main
+
+.rooms {
+  .main__top-page {
+    padding: 20px;
+
+    text-align: center;
+    line-height: 27px;
+
+    & h2 {
+      margin-top: 37px;
+      margin-bottom: 10px;
+
+      font-size: $defaultFont-size-top-page-etc;
+      font-family: adobe-garamond-pro, serif;
+    }
+
+    & p {
+      padding: 20px;
+      margin-top: 10px;
+
+      font-size: $defaultFont-size;
+      font-weight: $secondLevel;
+    }
+  }
+
+  .main__room-and-rates {
+    @include flex(column, center, center, nowrap);
+
+    margin-top: 70px;
+
+    & figure {
+      width: 800px;
+      height: 700px;
+    }
+
+    & img {
+      width: 800px;
+      height: 700px;
+
+      border-radius: 10px 10px 0 0;
+    }
+
+    .room-and-rates__room-types {
+      @include flex(row, center, center, nowrap);
+
+      width: 800px;
+      height: 70px;
+
+      background-color: $secondarbackground;
+
+      & span {
+        font-size: $defaultFont-size-bottom-page-etc;
+        font-weight: $thirdLevel;
+
+        color: $secondaryColor;
+      }
+    }
+
+    .room-and-rates__rates {
+      @include flex(row, space-between, center, nowrap);
+
+      width: 800px;
+      height: 90px;
+      border: 1px $primaryColor solid;
+
+      border-radius: 0 0 10px 10px;
+
+      & button {
+        width: 140px;
+        height: 45px;
+        margin-right: 50px;
+
+        color: $secondaryColor;
+        border-radius: 8px;
+        background-color: $tertiarybackground;
+        transition: width 2s linear, height 2s linear, border-raduis 2s linear;
+      }
+
+      & button:hover {
+        width: 190px;
+        height: 60px;
+
+        border-radius: 4px;
+      }
+
+      .rates__text-picture {
+        @include flex(row, center, center, nowrap);
+
+        padding: 20px;
+
+        & span {
+          margin-left: 10px;
+
+          font-weight: $thirdLevel;
+        }
+
+        & a i {
+          margin-left: 40px;
+
+          font-size: 2.6rem;
+
+          color: #dba849;
+        }
+      }
+    }
+  }
+  //      index, facilities and rooms: main__bottom-page and bottom-page__section1
+  .main__bottom-page {
+    @include flex(row, center, center, nowrap);
+
+    margin: 45px;
+
+    line-height: 24px;
+    text-align: center;
+
+    .bottom-page__section1 {
+      font-family: adobe-garamond-pro, serif;
+      font-size: $defaultFont-size-bottom-page-etc;
+
+      line-height: 68px;
+    }
+  }
+  //          end
+}
+
+// About: main
+
+.about {
+  width: 100%;
+  height: auto;
+  margin-bottom: 70px;
+
+  .about__information-container {
+    height: auto;
+    padding: 10px;
+    margin-top: 50px;
+
+    border-radius: 10px;
+    background-color: #aaa;
+
+    & h2 {
+      width: 80px;
+      height: 50px;
+      margin-bottom: 8px;
+
+      text-align: center;
+      font-size: $defaultFont-size-bottom-page-etc;
+      font-family: adobe-garamond-pro, serif;
+    }
+
+    & p {
+      font-size: $defaultFont-size;
+      font-weight: $secondLevel;
+      line-height: 25px;
+    }
+  }
+}
+
+// Contact: main
+
+.contact-us {
+  @include flex(row, space-around, center, wrap);
+
+  height: 100vh;
+  margin-bottom: 50px;
+
+  .main__top-page {
+    padding: 20px;
+
+    text-align: center;
+    line-height: 27px;
+
+    & h2 {
+      margin-top: 37px;
+      margin-bottom: 10px;
+
+      font-size: $defaultFont-size-top-page-etc;
+      font-family: adobe-garamond-pro, serif;
+    }
+
+    & p {
+      padding: 20px;
+      margin-top: 10px;
+
+      font-size: $defaultFont-size;
+      font-weight: $secondLevel;
+    }
+  }
+
+  #reset {
+    margin: 20px;
+    padding: 20px;
+
+    text-align: start;
+
+    & h2 {
+      margin-bottom: 10px;
+    }
+
+    & p {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .main__text {
+    @include flex(column, center, flex-start, nowrap);
+
+    padding: 20px;
+    margin: 20px;
+
+    font-size: 1.8rem;
+    line-height: 50px;
+  }
+
+  .main__formulary {
+    & form {
+      @include flex(column, center, flex-end, nowrap);
+
+      font-size: $defaultFont-size;
+      font-weight: $secondLevel;
+    }
+
+    & form label {
+      margin-bottom: 10px;
+    }
+
+    & span {
+      display: block;
+
+      margin-bottom: 10px;
+    }
+
+    & .formulary__input {
+      width: 250px;
+      height: 34px;
+      border: 1px #aaa solid;
+
+      outline: none;
+
+      border-radius: 2px;
+    }
+
+    & .form-send {
+      width: 90px;
+      height: 40px;
+      border: none;
+      margin-top: 10px;
+
+      border-radius: 3px;
+      background-color: #e0b973;
+      color: #ffff;
+    }
+
+    & .form-more {
+      height: 100px;
+    }
+  }
+}
+
+// Term-conditions: main
+
+.paper {
+  @include flex(column, center, center, nowrap);
+
+  padding: 20px;
+
+  background-color: $secondarbackground;
+
+  .main__page {
+    padding: 20px;
+    width: 1000px;
+
+    border-radius: 15px;
+    background-color: $primarybackground;
+
+    & h1 {
+      font-size: 8rem;
+      text-align: center;
+
+      color: black;
+    }
+
+    & p {
+      margin: 20px;
+
+      font-size: $defaultFont-size;
+    }
+    .container__anchor {
+      @include flex(row, space-between, center, nowrap);
+
+      & .anchor {
+        padding: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+
+        font-size: $defaultFont-size;
+
+        background-color: $tertiarybackground;
+        color: $primaryColor;
+        text-decoration: none;
+        border-radius: 10px;
+      }
+
+      & .anchor:hover {
+        animation: rotando 1.7s;
+      }
+
+      @keyframes rotando {
+        0% {
+          transform: rotate(1turn);
+          border: 1px #1a1a1a solid;
+        }
+
+        20% {
+          transform: rotate(1.2turn);
+          border: 1px #262626 solid;
+        }
+
+        40% {
+          transform: rotate(1.4turn);
+          border: 1px #333333 solid;
+        }
+
+        60% {
+          transform: rotate(1.6turn);
+          border: 1px #404040 solid;
+        }
+        80% {
+          transform: rotate(1.8turn);
+          border: 1px #4d4d4d solid;
+        }
+
+        100% {
+          transform: rotate(2turn);
+          border: 1px #595959 solid;
+        }
+      }
+
+      & .anchor:active {
+        border: 1px rgb(112, 112, 112) solid;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 580px) {
+  //     Index: main section
+
+  .services {
+    .main__top-page {
+      margin: 30px;
+
+      font-size: $defaultFont-size;
+      text-align: center;
+    }
+
+    .main__data {
+      .main__container {
+        @include flex(column-reverse, center, center, nowrap);
+
+        margin-top: 20px;
+
+        .container__text {
+          @include flex(column, center, center, nowrap);
+
+          padding: 30px;
+
+          text-align: center;
+          line-height: 15px;
+
+          & h2 {
+            font-size: $defaultFont-size-bottom-page-etc;
+            line-height: 25px;
+          }
+
+          & p {
+            padding: 30px;
+
+            font-size: 1.2rem;
+            font-weight: 500;
+
+            text-align: justify;
+          }
+
+          & .container__anchor-more {
+            margin: 10px 0;
+
+            & a {
+              transition: none;
+            }
+          }
+        }
+        .container__the-piture {
+          & img {
+            width: 100%;
+            height: auto;
+            transition: none;
+          }
+
+          & img:hover {
+            width: 100%;
+            height: auto;
+            transform: none;
+          }
+        }
+      }
+    }
+
+    .main__bottom-page {
+      margin: 45px;
+
+      font-size: 1rem;
+
+      .bottom-page__section1 {
+        line-height: 60px;
+      }
+    }
+  }
+
+  //        end section
+
+  //    Facilities: main section
+
+  .gallery {
+    .main__top-page {
+      @include flex(column, center, center, nowrap);
+
+      margin: 30px 0;
+
+      & h2 {
+        font-size: $defaultFont-size-bottom-page-etc;
+      }
+    }
+
+    .phone-gallery {
+      @include flex(column, center, center, nowrap);
+
+      width: 100%;
+      height: auto;
+
+      & .phone-gallery__picture figure {
+        @include flex(row, center, center, nowrap);
+      }
+
+      & .phone-gallery__picture img {
+        width: 90%;
+        height: auto;
+
+        transition: none;
+      }
+
+      & .phone-gallery__picture img:hover {
+        width: 90%;
+        height: auto;
+      }
+
+      & .phone-gallery__picture div {
+        width: 50%;
+
+        border-radius: 5px;
+        transform: translate(5px, -32px);
+      }
+
+      & .phone-gallery__picture div span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+  //   end section
+
+  //  Rooms: main sectio
+
+  .rooms {
+    .main__top-page {
+      @include flex(column, center, center, nowrap);
+
+      margin: 30px 0;
+
+      & h2 {
+        font-size: 3rem;
+      }
+    }
+    .main__room-and-rates {
+      @include flex(column, center, center, nowrap);
+
+      & figure {
+        width: 95vw;
+        height: 50vh;
+
+        & img {
+          width: 95vw;
+          height: 50vh;
+        }
+      }
+      .room-and-rates__room-types {
+        width: 95vw;
+        height: 55px;
+
+        background-color: #14274a;
+
+        & span {
+          font-size: 2.3rem;
+        }
+      }
+
+      .room-and-rates__rates {
+        width: 95vw;
+        height: auto;
+
+        & button {
+          width: 30%;
+          height: 43px;
+          margin-right: 15px;
+
+          font-size: 1.2rem;
+
+          transition: none;
+        }
+
+        & .room-and-rates__rates button:hover {
+          width: 30%;
+          height: 43px;
+
+          transform: none;
+        }
+
+        .rates__text-picture {
+          & a i {
+            margin-left: 10px;
+          }
+
+          & span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  //        end
+
+  //    About: main section
+
+  .about {
+    @include flex(column, center, center, nowrap);
+
+    .about__information-container {
+      @include flex(column, center, center, wrap);
+
+      margin: 15px;
+    }
+  }
+
+  //    end
+
+  //    Contact: main section
+
+  .contact-us {
+    @include flex(column, center, center, nowrap);
+
+    height: auto;
+
+    #reset {
+      margin: 0;
+
+      text-align: center;
+
+      & h2 {
+        font-size: $defaultFont-size-bottom-page-etc;
+      }
+    }
+  }
+
+  //   Term-conditions: main section
+
+  .paper {
+    .main__page {
+      width: 100%;
+      height: auto;
+
+      & h1 {
+        font-size: 3rem;
+        font-family: adobe-garamond-pro, serif;
+      }
+
+      & p {
+        margin: 20px;
+
+        font-size: 1.2rem;
+        font-weight: 500;
+      }
+
+      .container__anchor {
+        @include flex(row, center, center, nowrap);
+
+        & .anchor {
+          padding: 20px;
+
+          font-size: 1.2rem;
+          font-weight: 500;
+
+          &:hover {
+            animation: none;
+          }
+        }
+
+        & #more {
+          display: none;
+        }
+      }
+    }
+  }
+  //            end
+}

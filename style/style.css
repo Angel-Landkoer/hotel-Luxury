@@ -363,7 +363,7 @@ footer {
   text-align: center;
 
   color: black;
-}
+} 
 
 .main__page p {
   margin: 20px;
@@ -382,10 +382,6 @@ footer {
 
   line-height: 27px;
 }
-
-/* .container__text:hover {
-  padding: 60px;
-} */
 
 /*        end        */
 
@@ -587,6 +583,7 @@ footer {
 
 .rates__text-picture span {
   margin-left: 10px;
+
   font-weight: 700;
 }
 
@@ -594,8 +591,6 @@ footer {
   width: 26px;
   height: 26px;
   margin-left: 40px;
-
-  color: #e0b973;
 }
 
 /*          end          */
