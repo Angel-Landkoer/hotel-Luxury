@@ -9,24 +9,34 @@
     height: 90px;
   }
 
-  .header__menu {
-    @include flex(row, space-around, center, nowrap);
+  .toggle-open {
+    display: none;
+  }
 
-    font-size: $defaultFont-size;
+  .toggle-close {
+    & button {
+      display: none;
+    }
 
-    list-style: none;
+    .header__menu {
+      @include flex(row, space-around, center, nowrap);
 
-    .menu__items {
-      & a {
-        padding: 8px;
-        margin-right: 15px;
+      font-size: $defaultFont-size;
 
-        color: $secondaryColor;
-        text-decoration: none;
-      }
+      list-style: none;
 
-      & a:hover {
-        border-bottom: 2px $secondaryColor solid;
+      .menu__items {
+        & a {
+          padding: 8px;
+          margin-right: 15px;
+
+          color: $secondaryColor;
+          text-decoration: none;
+
+          &:hover {
+            border-bottom: 2px $secondaryColor solid;
+          }
+        }
       }
     }
   }
@@ -80,13 +90,107 @@
       margin-bottom: 60px;
     }
 
-    .header__menu {
-      @include flex(column, center, center, nowrap);
+    //     navbar responsive
 
-      margin-right: 20px;
-      padding: 10px;
+    .toggle-open {
+      position: absolute;
+      inset: 30px 0 0 90%;
+
+      .button-reset {
+        display: block;
+
+        border: none;
+
+        background-color: transparent;
+
+        & .fs3-icon {
+          font-size: 3rem;
+        }
+
+        & i {
+          max-width: 100%;
+          max-height: 100%;
+
+          color: #fff;
+          z-index: 9999999999;
+        }
+      }
+    }
+
+    .toggle-open,
+    .toggle-close {
+      display: block;
+    }
+
+    .toggle-close {
+      position: fixed;
+      inset: 0 0 0 0;
+
+      height: 100%;
+      /* width:140%; */
+      width: 100%;
+      z-index: 99999999;
+
+      background-color: $secondarbackground;
+      visibility: hidden;
+      transition: width 1s ease;
+
+      .button-reset {
+        display: block;
+
+        border: none;
+
+        background-color: transparent;
+
+        & .fs5-icon {
+          margin: 25px;
+
+          font-size: 5rem;
+        }
+
+        & i {
+          max-width: 100%;
+          max-height: 100%;
+
+          color: #fff;
+          z-index: 9999999999;
+        }
+      }
+
+      .header__menu {
+        @include flex(column, center, center, nowrap);
+
+        margin-top: 90px;
+        margin-right: 20px;
+        padding: 10px;
+
+        .menu__items {
+          padding: 10px;
+
+          & a {
+            padding: 0;
+            margin: 0;
+
+            &:active {
+              padding: 10px;
+              background-color: #cea456;
+            }
+
+            &:hover {
+              border: none;
+            }
+          }
+        }
+      }
+    }
+
+    .show {
+      visibility: visible;
+      /* width:67%; */
     }
   }
+
+  //   end navbar responsive
 
   .header__title {
     @include flex(column, center, flex-start, nowrap);
