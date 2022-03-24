@@ -23,7 +23,7 @@
       @include medidas(0, 0 0 20px 0, none, auto, auto);
 
       & p {
-        font-size: $defaultFont-size;
+        @extend %p;
 
         text-align: start;
       }
@@ -31,9 +31,7 @@
       & h2 {
         @include medidas(0, 0 0 20px 0, none, auto, auto);
 
-        font-size: $defaultFont-size-bottom-page-etc;
-        font-family: adobe-garamond-pro, serif;
-        font-weight: $thirdLevel;
+        @extend %h2;
 
         text-align: start;
       }
@@ -122,15 +120,13 @@
     & h2 {
       @include medidas(0, 37px 0 10px 0, none, auto, auto);
 
-      font-size: $defaultFont-size-bottom-page-etc;
-      font-family: adobe-garamond-pro, serif;
+      @extend %h2;
     }
 
     & p {
       @include medidas(20px, 10px 0 0 0, none, auto, auto);
 
-      font-size: $defaultFont-size;
-      font-weight: $secondLevel;
+      @extend %p;
     }
   }
 
@@ -203,15 +199,13 @@
     & h2 {
       @include medidas(0, 0, none, 37px 0 10px 0, auto);
 
-      font-size: $defaultFont-size-top-page-etc;
-      font-family: adobe-garamond-pro, serif;
+      @extend %h2;
     }
 
     & p {
       @include medidas(20px, 10px 0 0 0, none, auto, auto);
 
-      font-size: $defaultFont-size;
-      font-weight: $secondLevel;
+      @extend %p;
     }
   }
 
@@ -323,13 +317,11 @@
       @include medidas(0, 0 0 8px 0, none, 80px, 50px);
 
       text-align: center;
-      font-size: $defaultFont-size-bottom-page-etc;
-      font-family: adobe-garamond-pro, serif;
+      @extend %h2;
     }
 
     & p {
-      font-size: $defaultFont-size;
-      font-weight: $secondLevel;
+      @extend %p;
       line-height: 25px;
     }
   }
@@ -358,8 +350,7 @@
     & p {
       @include medidas(20px, 10px 0 0 0, none, auto, auto);
 
-      font-size: $defaultFont-size;
-      font-weight: $secondLevel;
+      @extend %p;
     }
   }
 
@@ -451,7 +442,7 @@
     & p {
       @include medidas(0, 20px, none, auto, auto);
 
-      font-size: $defaultFont-size;
+      @extend %p;
     }
     .container__anchor {
       @include flex(row, space-between, center, nowrap);
@@ -536,6 +527,8 @@
 
           & h2 {
             font-size: $defaultFont-size-bottom-page-etc;
+            font-family: adobe-garamond-pro, serif;
+            font-weight: $thirdLevel;
             line-height: 25px;
           }
 
@@ -557,6 +550,8 @@
           }
         }
         .container__the-piture {
+          @include medidas(0, 0, none, 100%, 300px);
+
           & img {
             @include medidas(0, 0, none, 100%, auto);
 
@@ -595,6 +590,8 @@
 
       & h2 {
         font-size: $defaultFont-size-bottom-page-etc;
+        font-family: adobe-garamond-pro, serif;
+        font-weight: $thirdLevel;
       }
     }
 
@@ -725,6 +722,8 @@
 
       & h2 {
         font-size: $defaultFont-size-bottom-page-etc;
+        font-family: adobe-garamond-pro, serif;
+        font-weight: $thirdLevel;
       }
     }
   }

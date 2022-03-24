@@ -12,6 +12,17 @@ html {
   color: #14274a;
 }
 
+.services .main__data .main__container p, .gallery .main__top-page p, .rooms .main__top-page p, .about .about__information-container p, .contact-us .main__top-page p, .paper .main__page p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.services .main__data .main__container h2, .gallery .main__top-page h2, .rooms .main__top-page h2, .about .about__information-container h2 {
+  font-size: 3.3rem;
+  font-family: adobe-garamond-pro, serif;
+  font-weight: 700;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -147,7 +158,11 @@ html {
   }
   .header__nav .toggle-open .button-reset {
     display: block;
+    padding: 0;
+    margin: 0;
     border: none;
+    width: auto;
+    height: auto;
     background-color: transparent;
   }
   .header__nav .toggle-open .button-reset .fs3-icon {
@@ -335,7 +350,6 @@ html {
 }
 
 .services .main__data .main__container p {
-  font-size: 1.6rem;
   text-align: start;
 }
 
@@ -345,9 +359,6 @@ html {
   border: none;
   width: auto;
   height: auto;
-  font-size: 3.3rem;
-  font-family: adobe-garamond-pro, serif;
-  font-weight: 700;
   text-align: start;
 }
 
@@ -478,8 +489,6 @@ html {
   border: none;
   width: auto;
   height: auto;
-  font-size: 3.3rem;
-  font-family: adobe-garamond-pro, serif;
 }
 
 .gallery .main__top-page p {
@@ -488,8 +497,6 @@ html {
   border: none;
   width: auto;
   height: auto;
-  font-size: 1.6rem;
-  font-weight: 500;
 }
 
 .gallery .phone-gallery {
@@ -611,8 +618,6 @@ html {
   border: none;
   width: 37px 0 10px 0;
   height: auto;
-  font-size: 4rem;
-  font-family: adobe-garamond-pro, serif;
 }
 
 .rooms .main__top-page p {
@@ -621,8 +626,6 @@ html {
   border: none;
   width: auto;
   height: auto;
-  font-size: 1.6rem;
-  font-weight: 500;
 }
 
 .rooms .main__room-and-rates {
@@ -836,13 +839,9 @@ html {
   width: 80px;
   height: 50px;
   text-align: center;
-  font-size: 3.3rem;
-  font-family: adobe-garamond-pro, serif;
 }
 
 .about .about__information-container p {
-  font-size: 1.6rem;
-  font-weight: 500;
   line-height: 25px;
 }
 
@@ -894,8 +893,6 @@ html {
   border: none;
   width: auto;
   height: auto;
-  font-size: 1.6rem;
-  font-weight: 500;
 }
 
 .contact-us #reset {
@@ -1060,7 +1057,6 @@ html {
   border: none;
   width: auto;
   height: auto;
-  font-size: 1.6rem;
 }
 
 .paper .main__page .container__anchor {
@@ -1227,6 +1223,8 @@ html {
   }
   .services .main__data .main__container .container__text h2 {
     font-size: 3.3rem;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 700;
     line-height: 25px;
   }
   .services .main__data .main__container .container__text p {
@@ -1249,6 +1247,13 @@ html {
   .services .main__data .main__container .container__text .container__anchor-more a {
     -webkit-transition: none;
     transition: none;
+  }
+  .services .main__data .main__container .container__the-piture {
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100%;
+    height: 300px;
   }
   .services .main__data .main__container .container__the-piture img {
     padding: 0;
@@ -1300,6 +1305,8 @@ html {
   }
   .gallery .main__top-page h2 {
     font-size: 3.3rem;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 700;
   }
   .gallery .phone-gallery {
     display: -webkit-box;
@@ -1537,6 +1544,8 @@ html {
   }
   .contact-us #reset h2 {
     font-size: 3.3rem;
+    font-family: adobe-garamond-pro, serif;
+    font-weight: 700;
   }
   .paper .main__page {
     padding: 0;
@@ -1678,9 +1687,6 @@ html {
   padding: 14px;
   margin: 0;
   border: none;
-  width: 190px;
-  height: 20px;
-  padding: 14px;
   width: 190px;
   height: 20px;
   border-top-left-radius: 4px;

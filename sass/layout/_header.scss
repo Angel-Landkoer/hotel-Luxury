@@ -92,7 +92,7 @@
       .button-reset {
         display: block;
 
-        border: none;
+        @include medidas(0, 0, none, auto, auto);
 
         background-color: transparent;
 
