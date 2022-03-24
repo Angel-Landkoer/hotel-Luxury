@@ -1,18 +1,18 @@
 // Index: main
 
 .services {
-  width: 100%;
-  height: auto;
+  @include medidas(0, 0, none, 100%, auto);
 
   .main__top-page {
-    padding: 20px;
+    @include medidas(20px, 0, none, auto, auto);
 
     text-align: center;
     line-height: 27px;
   }
 
   #size {
-    margin: 70px 0;
+    @include medidas(0, 70px 0, none, auto, auto);
+
     font-size: 2rem;
   }
 
@@ -20,7 +20,7 @@
     .main__container {
       @include flex(row, center, center, nowrap);
 
-      margin-bottom: 20px;
+      @include medidas(0, 0 0 20px 0, none, auto, auto);
 
       & p {
         font-size: $defaultFont-size;
@@ -29,7 +29,7 @@
       }
 
       & h2 {
-        margin-bottom: 20px;
+        @include medidas(0, 0 0 20px 0, none, auto, auto);
 
         font-size: $defaultFont-size-bottom-page-etc;
         font-family: adobe-garamond-pro, serif;
@@ -41,21 +41,19 @@
       .container__text {
         align-self: center;
 
-        padding: 60px;
+        @include medidas(60px, 0, none, auto, auto);
 
         line-height: 27px;
 
         .container__anchor-more {
-          margin-top: 34px;
+          @include medidas(0, 34px 0 0 0, none, auto, auto);
 
           text-align: center;
 
           & a {
             display: inline-block;
 
-            padding: 10px;
-            width: 100px;
-            border: none;
+            @include medidas(10px, 0, none, 100px, auto);
 
             font-size: 1.5rem;
 
@@ -74,12 +72,10 @@
       }
 
       .container__the-piture {
-        width: auto;
-        height: 390px;
+        @include medidas(0, 0, none, auto, 390px);
 
         & img {
-          width: 560px;
-          height: 390px;
+          @include medidas(0, 0, none, 560px, 390px);
 
           transition: width 1s linear, height 2s linear, transform 1s linear;
         }
@@ -95,7 +91,7 @@
   .main__bottom-page {
     @include flex(row, center, center, nowrap);
 
-    margin: 45px;
+    @include medidas(0, 45px, none, auto, auto);
 
     line-height: 24px;
     text-align: center;
@@ -113,28 +109,25 @@
 // facilities: main
 
 .gallery {
-  width: 100%;
-  height: auto;
+  @include medidas(0, 0, none, 100%, auto);
 
   //   tope del contenido del todos los main de cada pagina
 
   .main__top-page {
-    padding: 20px;
+    @include medidas(20px, 0, none, auto, auto);
 
     text-align: center;
     line-height: 27px;
 
     & h2 {
-      margin-top: 37px;
-      margin-bottom: 10px;
+      @include medidas(0, 37px 0 10px 0, none, auto, auto);
 
       font-size: $defaultFont-size-bottom-page-etc;
       font-family: adobe-garamond-pro, serif;
     }
 
     & p {
-      padding: 20px;
-      margin-top: 10px;
+      @include medidas(20px, 10px 0 0 0, none, auto, auto);
 
       font-size: $defaultFont-size;
       font-weight: $secondLevel;
@@ -150,15 +143,13 @@
       @include flex(column, center, center, nowrap);
       position: relative;
 
-      margin-bottom: 50px;
+      @include medidas(0, 0 0 50px 0, none, auto, auto);
 
       font-size: 2.5rem;
       font-weight: $thirdLevel;
 
       & img {
-        width: 1000px;
-        height: 650px;
-        border: 2px $primaryColor solid;
+        @include medidas(0, 0, 2px $primaryColor solid, 1000px, 650px);
 
         border-radius: 6px;
         transition: width 2s linear, height 2s linear;
@@ -173,9 +164,7 @@
         position: absolute;
         top: calc(90% + 25px);
 
-        width: 300px;
-        height: 45px;
-        padding: 5px;
+        @include medidas(5px, 0, none, 300px, 45px);
 
         text-align: center;
 
@@ -187,7 +176,7 @@
   .main__bottom-page {
     @include flex(row, center, center, nowrap);
 
-    margin: 45px;
+    @include medidas(0, 45px, none, auto, auto);
 
     line-height: 24px;
     text-align: center;
@@ -206,22 +195,20 @@
 
 .rooms {
   .main__top-page {
-    padding: 20px;
+    @include medidas(20px, 0, none, auto, auto);
 
     text-align: center;
     line-height: 27px;
 
     & h2 {
-      margin-top: 37px;
-      margin-bottom: 10px;
+      @include medidas(0, 0, none, 37px 0 10px 0, auto);
 
       font-size: $defaultFont-size-top-page-etc;
       font-family: adobe-garamond-pro, serif;
     }
 
     & p {
-      padding: 20px;
-      margin-top: 10px;
+      @include medidas(20px, 10px 0 0 0, none, auto, auto);
 
       font-size: $defaultFont-size;
       font-weight: $secondLevel;
@@ -231,16 +218,14 @@
   .main__room-and-rates {
     @include flex(column, center, center, nowrap);
 
-    margin-top: 70px;
+    @include medidas(0, 70px 0 0 0, none, auto, auto);
 
     & figure {
-      width: 800px;
-      height: 700px;
+      @include medidas(0, 0, none, 800px, 700px);
     }
 
     & img {
-      width: 800px;
-      height: 700px;
+      @include medidas(0, 0, none, 800px, 700px);
 
       border-radius: 10px 10px 0 0;
     }
@@ -248,8 +233,7 @@
     .room-and-rates__room-types {
       @include flex(row, center, center, nowrap);
 
-      width: 800px;
-      height: 70px;
+      @include medidas(0, 0, none, 800px, 70px);
 
       background-color: $secondarbackground;
 
@@ -264,16 +248,12 @@
     .room-and-rates__rates {
       @include flex(row, space-between, center, nowrap);
 
-      width: 800px;
-      height: 90px;
-      border: 1px $primaryColor solid;
+      @include medidas(0, 0, 1px $primaryColor solid, 800px, 90px);
 
       border-radius: 0 0 10px 10px;
 
       & button {
-        width: 140px;
-        height: 45px;
-        margin-right: 50px;
+        @include medidas(0, 0 50px 0 0, none, 140px, 45px);
 
         color: $secondaryColor;
         border-radius: 8px;
@@ -291,16 +271,16 @@
       .rates__text-picture {
         @include flex(row, center, center, nowrap);
 
-        padding: 20px;
+        @include medidas(20px, 0, none, auto, auto);
 
         & span {
-          margin-left: 10px;
+          @include medidas(0, 0 0 0 10px, none, auto, auto);
 
           font-weight: $thirdLevel;
         }
 
         & a i {
-          margin-left: 40px;
+          @include medidas(0, 0 0 0 40px, none, auto, auto);
 
           font-size: 2.6rem;
 
@@ -313,7 +293,7 @@
   .main__bottom-page {
     @include flex(row, center, center, nowrap);
 
-    margin: 45px;
+    @include medidas(0, 45px, none, auto, auto);
 
     line-height: 24px;
     text-align: center;
@@ -331,22 +311,16 @@
 // About: main
 
 .about {
-  width: 100%;
-  height: auto;
-  margin-bottom: 70px;
+  @include medidas(0, 0 0 70px 0, none, 100%, auto);
 
   .about__information-container {
-    height: auto;
-    padding: 10px;
-    margin-top: 50px;
+    @include medidas(10px, 50px 0 0 0, none, auto, auto);
 
     border-radius: 10px;
     background-color: #aaa;
 
     & h2 {
-      width: 80px;
-      height: 50px;
-      margin-bottom: 8px;
+      @include medidas(0, 0 0 8px 0, none, 80px, 50px);
 
       text-align: center;
       font-size: $defaultFont-size-bottom-page-etc;
@@ -366,26 +340,23 @@
 .contact-us {
   @include flex(row, space-around, center, wrap);
 
-  height: 100vh;
-  margin-bottom: 50px;
+  @include medidas(0, 0 0 50px 0, none, auto, 100vh);
 
   .main__top-page {
-    padding: 20px;
+    @include medidas(20px, 0, none, auto, auto);
 
     text-align: center;
     line-height: 27px;
 
     & h2 {
-      margin-top: 37px;
-      margin-bottom: 10px;
+      @include medidas(0, 37px 0 10px 0, none, auto, auto);
 
       font-size: $defaultFont-size-top-page-etc;
       font-family: adobe-garamond-pro, serif;
     }
 
     & p {
-      padding: 20px;
-      margin-top: 10px;
+      @include medidas(20px, 10px 0 0 0, none, auto, auto);
 
       font-size: $defaultFont-size;
       font-weight: $secondLevel;
@@ -393,26 +364,23 @@
   }
 
   #reset {
-    margin: 20px;
-    padding: 20px;
+    @include medidas(20px, 20px, none, auto, auto);
 
     text-align: start;
 
     & h2 {
-      margin-bottom: 10px;
+      @include medidas(0, 0 0 10px 0, none, auto, auto);
     }
 
     & p {
-      margin: 0;
-      padding: 0;
+      @include medidas(0, 0, none, auto, auto);
     }
   }
 
   .main__text {
     @include flex(column, center, flex-start, nowrap);
 
-    padding: 20px;
-    margin: 20px;
+    @include medidas(20px, 20px, none, auto, auto);
 
     font-size: 1.8rem;
     line-height: 50px;
@@ -427,19 +395,17 @@
     }
 
     & form label {
-      margin-bottom: 10px;
+      @include medidas(0, 0 0 10px 0, none, auto, auto);
     }
 
     & span {
       display: block;
 
-      margin-bottom: 10px;
+      @include medidas(0, 0 0 10px 0, none, auto, auto);
     }
 
     & .formulary__input {
-      width: 250px;
-      height: 34px;
-      border: 1px #aaa solid;
+      @include medidas(0, 0, 1px #aaa solid, 250px, 34px);
 
       outline: none;
 
@@ -447,10 +413,7 @@
     }
 
     & .form-send {
-      width: 90px;
-      height: 40px;
-      border: none;
-      margin-top: 10px;
+      @include medidas(0, 0 0 10px 0, none, 90px, 40px);
 
       border-radius: 3px;
       background-color: #e0b973;
@@ -458,7 +421,7 @@
     }
 
     & .form-more {
-      height: 100px;
+      @include medidas(0, 0, none, 250px, 100px);
     }
   }
 }
@@ -468,13 +431,12 @@
 .paper {
   @include flex(column, center, center, nowrap);
 
-  padding: 20px;
+  @include medidas(20px, 0, none, auto, auto);
 
   background-color: $secondarbackground;
 
   .main__page {
-    padding: 20px;
-    width: 1000px;
+    @include medidas(20px, 0, none, 1000px, auto);
 
     border-radius: 15px;
     background-color: $primarybackground;
@@ -487,7 +449,7 @@
     }
 
     & p {
-      margin: 20px;
+      @include medidas(0, 20px, none, auto, auto);
 
       font-size: $defaultFont-size;
     }
@@ -495,9 +457,7 @@
       @include flex(row, space-between, center, nowrap);
 
       & .anchor {
-        padding: 30px;
-        margin-left: 50px;
-        margin-right: 50px;
+        @include medidas(30px, 0 50px, none, auto, auto);
 
         font-size: $defaultFont-size;
 
@@ -554,7 +514,7 @@
 
   .services {
     .main__top-page {
-      margin: 30px;
+      @include medidas(0, 30px, none, auto, auto);
 
       font-size: $defaultFont-size;
       text-align: center;
@@ -564,12 +524,12 @@
       .main__container {
         @include flex(column-reverse, center, center, nowrap);
 
-        margin-top: 20px;
+        @include medidas(0, 20px 0 0 0, none, auto, auto);
 
         .container__text {
           @include flex(column, center, center, nowrap);
 
-          padding: 30px;
+          @include medidas(30px, 0, none, auto, auto);
 
           text-align: center;
           line-height: 15px;
@@ -580,7 +540,7 @@
           }
 
           & p {
-            padding: 30px;
+            @include medidas(30px, 0, none, auto, auto);
 
             font-size: 1.2rem;
             font-weight: 500;
@@ -589,7 +549,7 @@
           }
 
           & .container__anchor-more {
-            margin: 10px 0;
+            @include medidas(0, 10px 0, none, auto, auto);
 
             & a {
               transition: none;
@@ -598,8 +558,8 @@
         }
         .container__the-piture {
           & img {
-            width: 100%;
-            height: auto;
+            @include medidas(0, 0, none, 100%, auto);
+
             transition: none;
           }
 
@@ -613,7 +573,7 @@
     }
 
     .main__bottom-page {
-      margin: 45px;
+      @include medidas(0, 45px, none, auto, auto);
 
       font-size: 1rem;
 
@@ -631,7 +591,7 @@
     .main__top-page {
       @include flex(column, center, center, nowrap);
 
-      margin: 30px 0;
+      @include medidas(0, 30px 0, none, auto, auto);
 
       & h2 {
         font-size: $defaultFont-size-bottom-page-etc;
@@ -641,16 +601,14 @@
     .phone-gallery {
       @include flex(column, center, center, nowrap);
 
-      width: 100%;
-      height: auto;
+      @include medidas(30px, 0, none, 100%, auto);
 
       & .phone-gallery__picture figure {
         @include flex(row, center, center, nowrap);
       }
 
       & .phone-gallery__picture img {
-        width: 90%;
-        height: auto;
+        @include medidas(0, 0, none, 90%, auto);
 
         transition: none;
       }
@@ -661,7 +619,7 @@
       }
 
       & .phone-gallery__picture div {
-        width: 50%;
+        @include medidas(0, 0, none, 50%, auto);
 
         border-radius: 5px;
         transform: translate(5px, -32px);
@@ -680,7 +638,7 @@
     .main__top-page {
       @include flex(column, center, center, nowrap);
 
-      margin: 30px 0;
+      @include medidas(0, 30px 0, none, auto, auto);
 
       & h2 {
         font-size: 3rem;
@@ -690,17 +648,14 @@
       @include flex(column, center, center, nowrap);
 
       & figure {
-        width: 95vw;
-        height: 50vh;
+        @include medidas(0, 0, none, 95vw, 50vh);
 
         & img {
-          width: 95vw;
-          height: 50vh;
+          @include medidas(0, 0, none, 95vw, 50vh);
         }
       }
       .room-and-rates__room-types {
-        width: 95vw;
-        height: 55px;
+        @include medidas(0, 0, none, 95vw, 55vh);
 
         background-color: #14274a;
 
@@ -710,13 +665,10 @@
       }
 
       .room-and-rates__rates {
-        width: 95vw;
-        height: auto;
+        @include medidas(0, 0, none, 95vw, auto);
 
         & button {
-          width: 30%;
-          height: 43px;
-          margin-right: 15px;
+          @include medidas(0, 0 15px 0 0, none, 30%, 43px);
 
           font-size: 1.2rem;
 
@@ -732,7 +684,7 @@
 
         .rates__text-picture {
           & a i {
-            margin-left: 10px;
+            @include medidas(0, 0 0 0 10px, none, auto, auto);
           }
 
           & span {
@@ -753,7 +705,7 @@
     .about__information-container {
       @include flex(column, center, center, wrap);
 
-      margin: 15px;
+      @include medidas(0, 15px, none, auto, auto);
     }
   }
 
@@ -764,10 +716,10 @@
   .contact-us {
     @include flex(column, center, center, nowrap);
 
-    height: auto;
+    @include medidas(0, 0, none, auto, auto);
 
     #reset {
-      margin: 0;
+      @include medidas(0, 0, none, auto, auto);
 
       text-align: center;
 
@@ -781,8 +733,7 @@
 
   .paper {
     .main__page {
-      width: 100%;
-      height: auto;
+      @include medidas(0, 0, none, 100%, auto);
 
       & h1 {
         font-size: 3rem;
@@ -790,7 +741,7 @@
       }
 
       & p {
-        margin: 20px;
+        @include medidas(0, 20px, none, auto, auto);
 
         font-size: 1.2rem;
         font-weight: 500;
@@ -800,7 +751,7 @@
         @include flex(row, center, center, nowrap);
 
         & .anchor {
-          padding: 20px;
+          @include medidas(20px, 0, none, auto, auto);
 
           font-size: 1.2rem;
           font-weight: 500;

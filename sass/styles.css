@@ -31,7 +31,9 @@ html {
 }
 
 .header__nav img {
-  margin-left: 92px;
+  padding: 0;
+  margin: 0 0 0 92px;
+  border: 0;
   width: 150px;
   height: 90px;
 }
@@ -65,7 +67,10 @@ html {
 
 .header__nav .toggle-close .header__menu .menu__items a {
   padding: 8px;
-  margin-right: 15px;
+  margin: 0 15px 0 0;
+  border: 0;
+  width: auto;
+  height: auto;
   color: #ffff;
   text-decoration: none;
 }
@@ -90,8 +95,11 @@ html {
           align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin: 80px 0 28px 92px;
   padding: 40px;
+  margin: 80px 0 28px 92px;
+  border: none;
+  width: auto;
+  height: auto;
   line-height: 78px;
   text-align: start;
 }
@@ -115,7 +123,11 @@ html {
 }
 
 .header__title-bc {
-  margin-top: 40px;
+  padding: 0;
+  margin: 40px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 8rem;
   text-align: center;
   color: #ffff;
@@ -123,10 +135,11 @@ html {
 
 @media (min-width: 320px) and (max-width: 580px) {
   .header__nav img {
+    padding: 0;
+    margin: 0 0 60px 30px;
+    border: none;
     width: 125px;
     height: 85px;
-    margin-left: 30px;
-    margin-bottom: 60px;
   }
   .header__nav .toggle-open {
     position: absolute;
@@ -153,9 +166,11 @@ html {
   .header__nav .toggle-close {
     position: fixed;
     inset: 0 0 0 0;
-    height: 100%;
-    /* width:140%; */
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 100%;
+    height: 100%;
     z-index: 99999999;
     background-color: #14274A;
     visibility: hidden;
@@ -164,11 +179,19 @@ html {
   }
   .header__nav .toggle-close .button-reset {
     display: block;
+    padding: 0;
+    margin: 0;
     border: none;
+    width: auto;
+    height: auto;
     background-color: transparent;
   }
   .header__nav .toggle-close .button-reset .fs5-icon {
+    padding: 0;
     margin: 25px;
+    border: none;
+    width: auto;
+    height: auto;
     font-size: 5rem;
   }
   .header__nav .toggle-close .button-reset i {
@@ -193,16 +216,25 @@ html {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: 90px;
-    margin-right: 20px;
     padding: 10px;
+    margin: 90px 0 0 0;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .header__nav .toggle-close .header__menu .menu__items {
     padding: 10px;
+    margin: 0;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .header__nav .toggle-close .header__menu .menu__items a {
     padding: 0;
     margin: 0;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .header__nav .toggle-close .header__menu .menu__items a:active {
     padding: 10px;
@@ -233,6 +265,9 @@ html {
         flex-wrap: nowrap;
     padding: 0;
     margin: 50px 0px 28px 10px;
+    border: none;
+    width: auto;
+    height: auto;
     line-height: 25px;
   }
   .header__title .header__title-characteristic--adobe {
@@ -250,18 +285,29 @@ html {
 }
 
 .services {
+  padding: 0;
+  margin: 0;
+  border: none;
   width: 100%;
   height: auto;
 }
 
 .services .main__top-page {
   padding: 20px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
   text-align: center;
   line-height: 27px;
 }
 
 .services #size {
+  padding: 0;
   margin: 70px 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 2rem;
 }
 
@@ -281,7 +327,11 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .services .main__data .main__container p {
@@ -290,7 +340,11 @@ html {
 }
 
 .services .main__data .main__container h2 {
-  margin-bottom: 20px;
+  padding: 0;
+  margin: 0 0 20px 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 3.3rem;
   font-family: adobe-garamond-pro, serif;
   font-weight: 700;
@@ -302,19 +356,29 @@ html {
       -ms-grid-row-align: center;
       align-self: center;
   padding: 60px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
   line-height: 27px;
 }
 
 .services .main__data .main__container .container__text .container__anchor-more {
-  margin-top: 34px;
+  padding: 0;
+  margin: 34px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
   text-align: center;
 }
 
 .services .main__data .main__container .container__text .container__anchor-more a {
   display: inline-block;
   padding: 10px;
-  width: 100px;
+  margin: 0;
   border: none;
+  width: 100px;
+  height: auto;
   font-size: 1.5rem;
   text-decoration: none;
   border-radius: 6px;
@@ -333,11 +397,17 @@ html {
 }
 
 .services .main__data .main__container .container__the-piture {
+  padding: 0;
+  margin: 0;
+  border: none;
   width: auto;
   height: 390px;
 }
 
 .services .main__data .main__container .container__the-piture img {
+  padding: 0;
+  margin: 0;
+  border: none;
   width: 560px;
   height: 390px;
   -webkit-transition: width 1s linear, height 2s linear, -webkit-transform 1s linear;
@@ -369,7 +439,11 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 0;
   margin: 45px;
+  border: none;
+  width: auto;
+  height: auto;
   line-height: 24px;
   text-align: center;
 }
@@ -381,26 +455,39 @@ html {
 }
 
 .gallery {
+  padding: 0;
+  margin: 0;
+  border: none;
   width: 100%;
   height: auto;
 }
 
 .gallery .main__top-page {
   padding: 20px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
   text-align: center;
   line-height: 27px;
 }
 
 .gallery .main__top-page h2 {
-  margin-top: 37px;
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 37px 0 10px 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 3.3rem;
   font-family: adobe-garamond-pro, serif;
 }
 
 .gallery .main__top-page p {
   padding: 20px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -440,15 +527,21 @@ html {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   position: relative;
-  margin-bottom: 50px;
+  padding: 0;
+  margin: 0 0 50px 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 2.5rem;
   font-weight: 700;
 }
 
 .gallery .phone-gallery .phone-gallery__picture img {
+  padding: 0;
+  margin: 0;
+  border: 2px #14274A solid;
   width: 1000px;
   height: 650px;
-  border: 2px #14274A solid;
   border-radius: 6px;
   -webkit-transition: width 2s linear, height 2s linear;
   transition: width 2s linear, height 2s linear;
@@ -462,9 +555,11 @@ html {
 .gallery .phone-gallery .phone-gallery__picture div {
   position: absolute;
   top: calc(90% + 25px);
+  padding: 5px;
+  margin: 0;
+  border: none;
   width: 300px;
   height: 45px;
-  padding: 5px;
   text-align: center;
   background-color: #fff;
 }
@@ -485,7 +580,11 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 0;
   margin: 45px;
+  border: none;
+  width: auto;
+  height: auto;
   line-height: 24px;
   text-align: center;
 }
@@ -498,20 +597,30 @@ html {
 
 .rooms .main__top-page {
   padding: 20px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
   text-align: center;
   line-height: 27px;
 }
 
 .rooms .main__top-page h2 {
-  margin-top: 37px;
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 37px 0 10px 0;
+  height: auto;
   font-size: 4rem;
   font-family: adobe-garamond-pro, serif;
 }
 
 .rooms .main__top-page p {
   padding: 20px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 1.6rem;
   font-weight: 500;
 }
@@ -532,15 +641,25 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  margin-top: 70px;
+  padding: 0;
+  margin: 70px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .rooms .main__room-and-rates figure {
+  padding: 0;
+  margin: 0;
+  border: none;
   width: 800px;
   height: 700px;
 }
 
 .rooms .main__room-and-rates img {
+  padding: 0;
+  margin: 0;
+  border: none;
   width: 800px;
   height: 700px;
   border-radius: 10px 10px 0 0;
@@ -562,6 +681,9 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  border: none;
   width: 800px;
   height: 70px;
   background-color: #14274A;
@@ -589,16 +711,20 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  border: 1px #14274A solid;
   width: 800px;
   height: 90px;
-  border: 1px #14274A solid;
   border-radius: 0 0 10px 10px;
 }
 
 .rooms .main__room-and-rates .room-and-rates__rates button {
+  padding: 0;
+  margin: 0 50px 0 0;
+  border: none;
   width: 140px;
   height: 45px;
-  margin-right: 50px;
   color: #ffff;
   border-radius: 8px;
   background-color: #E0B973;
@@ -629,15 +755,27 @@ html {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 20px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .rooms .main__room-and-rates .room-and-rates__rates .rates__text-picture span {
-  margin-left: 10px;
+  padding: 0;
+  margin: 0 0 0 10px;
+  border: none;
+  width: auto;
+  height: auto;
   font-weight: 700;
 }
 
 .rooms .main__room-and-rates .room-and-rates__rates .rates__text-picture a i {
-  margin-left: 40px;
+  padding: 0;
+  margin: 0 0 0 40px;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 2.6rem;
   color: #dba849;
 }
@@ -658,7 +796,11 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 0;
   margin: 45px;
+  border: none;
+  width: auto;
+  height: auto;
   line-height: 24px;
   text-align: center;
 }
@@ -670,23 +812,29 @@ html {
 }
 
 .about {
+  padding: 0;
+  margin: 0 0 70px 0;
+  border: none;
   width: 100%;
   height: auto;
-  margin-bottom: 70px;
 }
 
 .about .about__information-container {
-  height: auto;
   padding: 10px;
-  margin-top: 50px;
+  margin: 50px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
   border-radius: 10px;
   background-color: #aaa;
 }
 
 .about .about__information-container h2 {
+  padding: 0;
+  margin: 0 0 8px 0;
+  border: none;
   width: 80px;
   height: 50px;
-  margin-bottom: 8px;
   text-align: center;
   font-size: 3.3rem;
   font-family: adobe-garamond-pro, serif;
@@ -713,43 +861,66 @@ html {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 50px 0;
+  border: none;
+  width: auto;
   height: 100vh;
-  margin-bottom: 50px;
 }
 
 .contact-us .main__top-page {
   padding: 20px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
   text-align: center;
   line-height: 27px;
 }
 
 .contact-us .main__top-page h2 {
-  margin-top: 37px;
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 37px 0 10px 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 4rem;
   font-family: adobe-garamond-pro, serif;
 }
 
 .contact-us .main__top-page p {
   padding: 20px;
-  margin-top: 10px;
+  margin: 10px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 1.6rem;
   font-weight: 500;
 }
 
 .contact-us #reset {
-  margin: 20px;
   padding: 20px;
+  margin: 20px;
+  border: none;
+  width: auto;
+  height: auto;
   text-align: start;
 }
 
 .contact-us #reset h2 {
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .contact-us #reset p {
-  margin: 0;
   padding: 0;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .contact-us .main__text {
@@ -770,6 +941,9 @@ html {
       flex-wrap: nowrap;
   padding: 20px;
   margin: 20px;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 1.8rem;
   line-height: 50px;
 }
@@ -795,33 +969,48 @@ html {
 }
 
 .contact-us .main__formulary form label {
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .contact-us .main__formulary span {
   display: block;
-  margin-bottom: 10px;
+  padding: 0;
+  margin: 0 0 10px 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .contact-us .main__formulary .formulary__input {
+  padding: 0;
+  margin: 0;
+  border: 1px #aaa solid;
   width: 250px;
   height: 34px;
-  border: 1px #aaa solid;
   outline: none;
   border-radius: 2px;
 }
 
 .contact-us .main__formulary .form-send {
+  padding: 0;
+  margin: 0 0 10px 0;
+  border: none;
   width: 90px;
   height: 40px;
-  border: none;
-  margin-top: 10px;
   border-radius: 3px;
   background-color: #e0b973;
   color: #ffff;
 }
 
 .contact-us .main__formulary .form-more {
+  padding: 0;
+  margin: 0;
+  border: none;
+  width: 250px;
   height: 100px;
 }
 
@@ -842,12 +1031,19 @@ html {
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   padding: 20px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: auto;
   background-color: #14274A;
 }
 
 .paper .main__page {
   padding: 20px;
+  margin: 0;
+  border: none;
   width: 1000px;
+  height: auto;
   border-radius: 15px;
   background-color: #E5E5E5;
 }
@@ -859,7 +1055,11 @@ html {
 }
 
 .paper .main__page p {
+  padding: 0;
   margin: 20px;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 1.6rem;
 }
 
@@ -883,8 +1083,10 @@ html {
 
 .paper .main__page .container__anchor .anchor {
   padding: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 0 50px;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 1.6rem;
   background-color: #E0B973;
   color: #14274A;
@@ -969,7 +1171,11 @@ html {
 
 @media (min-width: 320px) and (max-width: 580px) {
   .services .main__top-page {
+    padding: 0;
     margin: 30px;
+    border: none;
+    width: auto;
+    height: auto;
     font-size: 1.6rem;
     text-align: center;
   }
@@ -989,7 +1195,11 @@ html {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: 20px;
+    padding: 0;
+    margin: 20px 0 0 0;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .services .main__data .main__container .container__text {
     display: -webkit-box;
@@ -1008,6 +1218,10 @@ html {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     padding: 30px;
+    margin: 0;
+    border: none;
+    width: auto;
+    height: auto;
     text-align: center;
     line-height: 15px;
   }
@@ -1017,18 +1231,29 @@ html {
   }
   .services .main__data .main__container .container__text p {
     padding: 30px;
+    margin: 0;
+    border: none;
+    width: auto;
+    height: auto;
     font-size: 1.2rem;
     font-weight: 500;
     text-align: justify;
   }
   .services .main__data .main__container .container__text .container__anchor-more {
+    padding: 0;
     margin: 10px 0;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .services .main__data .main__container .container__text .container__anchor-more a {
     -webkit-transition: none;
     transition: none;
   }
   .services .main__data .main__container .container__the-piture img {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 100%;
     height: auto;
     -webkit-transition: none;
@@ -1041,7 +1266,11 @@ html {
             transform: none;
   }
   .services .main__bottom-page {
+    padding: 0;
     margin: 45px;
+    border: none;
+    width: auto;
+    height: auto;
     font-size: 1rem;
   }
   .services .main__bottom-page .bottom-page__section1 {
@@ -1063,7 +1292,11 @@ html {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding: 0;
     margin: 30px 0;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .gallery .main__top-page h2 {
     font-size: 3.3rem;
@@ -1084,6 +1317,9 @@ html {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding: 30px;
+    margin: 0;
+    border: none;
     width: 100%;
     height: auto;
   }
@@ -1105,6 +1341,9 @@ html {
         flex-wrap: nowrap;
   }
   .gallery .phone-gallery .phone-gallery__picture img {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 90%;
     height: auto;
     -webkit-transition: none;
@@ -1115,7 +1354,11 @@ html {
     height: auto;
   }
   .gallery .phone-gallery .phone-gallery__picture div {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 50%;
+    height: auto;
     border-radius: 5px;
     -webkit-transform: translate(5px, -32px);
             transform: translate(5px, -32px);
@@ -1139,7 +1382,11 @@ html {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding: 0;
     margin: 30px 0;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .rooms .main__top-page h2 {
     font-size: 3rem;
@@ -1162,29 +1409,43 @@ html {
         flex-wrap: nowrap;
   }
   .rooms .main__room-and-rates figure {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 95vw;
     height: 50vh;
   }
   .rooms .main__room-and-rates figure img {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 95vw;
     height: 50vh;
   }
   .rooms .main__room-and-rates .room-and-rates__room-types {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 95vw;
-    height: 55px;
+    height: 55vh;
     background-color: #14274a;
   }
   .rooms .main__room-and-rates .room-and-rates__room-types span {
     font-size: 2.3rem;
   }
   .rooms .main__room-and-rates .room-and-rates__rates {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 95vw;
     height: auto;
   }
   .rooms .main__room-and-rates .room-and-rates__rates button {
+    padding: 0;
+    margin: 0 15px 0 0;
+    border: none;
     width: 30%;
     height: 43px;
-    margin-right: 15px;
     font-size: 1.2rem;
     -webkit-transition: none;
     transition: none;
@@ -1196,7 +1457,11 @@ html {
             transform: none;
   }
   .rooms .main__room-and-rates .room-and-rates__rates .rates__text-picture a i {
-    margin-left: 10px;
+    padding: 0;
+    margin: 0 0 0 10px;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .rooms .main__room-and-rates .room-and-rates__rates .rates__text-picture span {
     display: none;
@@ -1234,7 +1499,11 @@ html {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding: 0;
     margin: 15px;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .contact-us {
     display: -webkit-box;
@@ -1252,16 +1521,27 @@ html {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: auto;
     height: auto;
   }
   .contact-us #reset {
+    padding: 0;
     margin: 0;
+    border: none;
+    width: auto;
+    height: auto;
     text-align: center;
   }
   .contact-us #reset h2 {
     font-size: 3.3rem;
   }
   .paper .main__page {
+    padding: 0;
+    margin: 0;
+    border: none;
     width: 100%;
     height: auto;
   }
@@ -1270,7 +1550,11 @@ html {
     font-family: adobe-garamond-pro, serif;
   }
   .paper .main__page p {
+    padding: 0;
     margin: 20px;
+    border: none;
+    width: auto;
+    height: auto;
     font-size: 1.2rem;
     font-weight: 500;
   }
@@ -1293,6 +1577,10 @@ html {
   }
   .paper .main__page .container__anchor .anchor {
     padding: 20px;
+    margin: 0;
+    border: none;
+    width: auto;
+    height: auto;
     font-size: 1.2rem;
     font-weight: 500;
   }
@@ -1321,9 +1609,11 @@ html {
           align-items: center;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  padding: 10px;
+  margin: 0;
+  border: none;
   width: 100%;
   height: auto;
-  padding: 10px;
   font-size: 1.3rem;
   text-align: start;
   color: #ffff;
@@ -1368,15 +1658,28 @@ html {
 }
 
 .footer__container .container__icons .fab {
-  margin-bottom: 8px;
+  padding: 0;
+  margin: 0 0 8px 0;
+  border: none;
+  width: auto;
+  height: auto;
   font-size: 1.7rem;
 }
 
 .footer__container .container__formulaty form {
-  margin-top: 10px;
+  padding: 0;
+  margin: 10px 0 0 0;
+  border: none;
+  width: auto;
+  height: auto;
 }
 
 .footer__container .container__formulaty .formulaty__input-email {
+  padding: 14px;
+  margin: 0;
+  border: none;
+  width: 190px;
+  height: 20px;
   padding: 14px;
   width: 190px;
   height: 20px;
@@ -1389,6 +1692,10 @@ html {
   position: relative;
   right: 4px;
   padding: 7px;
+  margin: 0;
+  border: none;
+  width: auto;
+  height: 32px;
   background-color: #E0B973;
 }
 
@@ -1414,8 +1721,11 @@ html {
     display: none;
   }
   .footer__container .container__links {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 0;
+    margin: 10px 0 10px 0;
+    border: none;
+    width: auto;
+    height: auto;
     -webkit-box-ordinal-group: 4;
         -ms-flex-order: 3;
             order: 3;
@@ -1440,6 +1750,9 @@ html {
   .footer__container .container__links ul a {
     padding: 1px;
     margin: 5px;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .footer__container .container__icons {
     display: -webkit-box;
@@ -1457,21 +1770,31 @@ html {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 0;
+    margin: 10px 0 10px 0;
+    border: none;
+    width: auto;
+    height: auto;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
   .footer__container .container__icons .fab {
+    padding: 0;
     margin: 5px 10px 5px 10px;
+    border: none;
+    width: auto;
+    height: auto;
   }
   .footer__container .container__icons .fab span {
     display: none;
   }
   .footer__container .container__formulaty {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    padding: 0;
+    margin: 10px 0 10px 0;
+    border: none;
+    width: auto;
+    height: auto;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;

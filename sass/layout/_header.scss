@@ -4,9 +4,7 @@
   @include flex(row, space-between, center, nowrap);
 
   & img {
-    margin-left: 92px;
-    width: 150px;
-    height: 90px;
+    @include medidas(0, 0 0 0 92px, 0, 150px, 90px);
   }
 
   .toggle-open {
@@ -27,8 +25,7 @@
 
       .menu__items {
         & a {
-          padding: 8px;
-          margin-right: 15px;
+          @include medidas(8px, 0 15px 0 0, 0, auto, auto);
 
           color: $secondaryColor;
           text-decoration: none;
@@ -45,8 +42,7 @@
 .header__title {
   @include flex(column, center, flex-start, nowrap);
 
-  margin: 80px 0 28px 92px;
-  padding: 40px;
+  @include medidas(40px, 80px 0 28px 92px, none, auto, auto);
 
   line-height: 78px;
   text-align: start;
@@ -71,7 +67,7 @@
 //      about and contact
 
 .header__title-bc {
-  margin-top: 40px;
+  @include medidas(0, 40px 0 0 0, none, auto, auto);
 
   font-size: 8rem;
   text-align: center;
@@ -84,10 +80,7 @@
 
   .header__nav {
     & img {
-      width: 125px;
-      height: 85px;
-      margin-left: 30px;
-      margin-bottom: 60px;
+      @include medidas(0, 0 0 60px 30px, none, 125px, 85px);
     }
 
     //     navbar responsive
@@ -126,9 +119,8 @@
       position: fixed;
       inset: 0 0 0 0;
 
-      height: 100%;
-      /* width:140%; */
-      width: 100%;
+      @include medidas(0, 0, none, 100%, 100%);
+
       z-index: 99999999;
 
       background-color: $secondarbackground;
@@ -138,12 +130,12 @@
       .button-reset {
         display: block;
 
-        border: none;
+        @include medidas(0, 0, none, auto, auto);
 
         background-color: transparent;
 
         & .fs5-icon {
-          margin: 25px;
+          @include medidas(0, 25px, none, auto, auto);
 
           font-size: 5rem;
         }
@@ -160,16 +152,13 @@
       .header__menu {
         @include flex(column, center, center, nowrap);
 
-        margin-top: 90px;
-        margin-right: 20px;
-        padding: 10px;
+        @include medidas(10px, 90px 0 0 0, none, auto, auto);
 
         .menu__items {
-          padding: 10px;
+          @include medidas(10px, 0, none, auto, auto);
 
           & a {
-            padding: 0;
-            margin: 0;
+            @include medidas(0, 0, none, auto, auto);
 
             &:active {
               padding: 10px;
@@ -195,8 +184,7 @@
   .header__title {
     @include flex(column, center, flex-start, nowrap);
 
-    padding: 0;
-    margin: 50px 0px 28px 10px;
+    @include medidas(0, 50px 0px 28px 10px, none, auto, auto);
 
     line-height: 25px;
 

@@ -1,9 +1,7 @@
 .footer__container {
   @include flex(row, space-evenly, center, nowrap);
 
-  width: 100%;
-  height: auto;
-  padding: 10px;
+  @include medidas(10px, 0, none, 100%, auto);
 
   font-size: 1.3rem;
   text-align: start;
@@ -37,7 +35,7 @@
     line-height: 23px;
 
     & .fab {
-      margin-bottom: 8px;
+      @include medidas(0, 0 0 8px 0, none, auto, auto);
 
       font-size: 1.7rem;
     }
@@ -45,10 +43,11 @@
 
   .container__formulaty {
     & form {
-      margin-top: 10px;
+      @include medidas(0, 10px 0 0 0, none, auto, auto);
     }
 
     & .formulaty__input-email {
+      @include medidas(14px, 0, none, 190px, 20px);
       padding: 14px;
       width: 190px;
       height: 20px;
@@ -62,7 +61,7 @@
       position: relative;
       right: 4px;
 
-      padding: 7px;
+      @include medidas(7px, 0, none, auto, 32px);
 
       background-color: $tertiarybackground;
     }
@@ -80,8 +79,7 @@
     }
 
     .container__links {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      @include medidas(0, 10px 0 10px 0, none, auto, auto);
 
       order: 3;
 
@@ -90,21 +88,19 @@
       }
 
       & ul a {
-        padding: 1px;
-        margin: 5px;
+        @include medidas(1px, 5px, none, auto, auto);
       }
     }
 
     .container__icons {
       @include flex(row, space-evenly, center, nowrap);
 
-      margin-top: 10px;
-      margin-bottom: 10px;
+      @include medidas(0, 10px 0 10px 0, none, auto, auto);
 
       order: 1;
 
       & .fab {
-        margin: 5px 10px 5px 10px;
+        @include medidas(0, 5px 10px 5px 10px, none, auto, auto);
 
         & span {
           display: none;
@@ -113,8 +109,7 @@
     }
 
     .container__formulaty {
-      margin-top: 10px;
-      margin-bottom: 10px;
+      @include medidas(0, 10px 0 10px 0, none, auto, auto);
 
       order: 2;
 
