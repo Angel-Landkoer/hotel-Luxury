@@ -48,7 +48,7 @@
   text-align: start;
 
   .header__title-characteristic {
-    font-weight: 400;
+    font-weight: $firstLevel;
   }
   .header__title-characteristic--adobe {
     font-size: 5.5rem;
@@ -104,7 +104,7 @@
           max-width: 100%;
           max-height: 100%;
 
-          color: #fff;
+          color: $secondaryColor;
           z-index: 9999999999;
         }
       }
@@ -144,7 +144,7 @@
           max-width: 100%;
           max-height: 100%;
 
-          color: #fff;
+          color: $secondaryColor;
           z-index: 9999999999;
         }
       }
@@ -203,7 +203,7 @@
     font-size: 5rem;
     font-family: adobe-garamond-pro, serif;
 
-    color: #fff;
+    color: $secondaryColor;
   }
 
   //      end section
