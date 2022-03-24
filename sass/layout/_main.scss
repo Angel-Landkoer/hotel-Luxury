@@ -55,7 +55,7 @@
 
             font-size: 1.5rem;
 
-            text-decoration: none;
+            text-decoration: map-get($nothing, decoracion);
             border-radius: 6px;
             color: $secondaryColor;
             background-color: $tertiarybackground;
@@ -454,7 +454,7 @@
 
         background-color: $tertiarybackground;
         color: $primaryColor;
-        text-decoration: none;
+        text-decoration: map-get($nothing, decoracion);
         border-radius: 10px;
       }
 
@@ -685,7 +685,7 @@
           }
 
           & span {
-            display: none;
+            display: map-get($nothing, desplegar);
           }
         }
       }
@@ -761,7 +761,7 @@
         }
 
         & #more {
-          display: none;
+          display: map-get($nothing, desplegar);
         }
       }
     }

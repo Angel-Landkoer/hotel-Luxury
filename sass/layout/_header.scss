@@ -8,12 +8,12 @@
   }
 
   .toggle-open {
-    display: none;
+    display: map-get($nothing, desplegar);
   }
 
   .toggle-close {
     & button {
-      display: none;
+      display: map-get($nothing, desplegar);
     }
 
     .header__menu {
@@ -28,7 +28,7 @@
           @include medidas(8px, 0 15px 0 0, 0, auto, auto);
 
           color: $secondaryColor;
-          text-decoration: none;
+          text-decoration: map-get($nothing, decoracion);
 
           &:hover {
             border-bottom: 2px $secondaryColor solid;

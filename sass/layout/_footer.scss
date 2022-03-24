@@ -20,7 +20,7 @@
     }
 
     & ul a {
-      text-decoration: none;
+      text-decoration: map-get($nothing, decoracion) ;
       color: $secondaryColor;
     }
 
@@ -47,7 +47,7 @@
     }
 
     & .formulaty__input-email {
-      @include medidas(14px, 0, none, 190px, 20px); 
+      @include medidas(14px, 0, none, 190px, 20px);
 
       border-top-left-radius: 4px;
       border-bottom-left-radius: 4px;
@@ -72,7 +72,7 @@
     @include flex(column, center, center, nowrap);
 
     .container__data {
-      display: none;
+      display: map-get($nothing, desplegar);
     }
 
     .container__links {
@@ -100,7 +100,7 @@
         @include medidas(0, 5px 10px 5px 10px, none, auto, auto);
 
         & span {
-          display: none;
+          display: map-get($nothing, desplegar);
         }
       }
     }
@@ -111,7 +111,7 @@
       order: 2;
 
       & span {
-        display: none;
+        display: map-get($nothing, desplegar);
       }
     }
   }
