@@ -716,11 +716,12 @@
     @include medidas(0, 0, none, auto, auto);
 
     #reset {
-      @include medidas(0, 0, none, auto, auto);
+      @include medidas(20px, 0, none, auto, auto);
 
       text-align: center;
 
       & h2 {
+        @include medidas(0, 37px 0 0 0, none, auto, auto);
         font-size: $defaultFont-size-bottom-page-etc;
         font-family: adobe-garamond-pro, serif;
         font-weight: $thirdLevel;

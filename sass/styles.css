@@ -1535,7 +1535,7 @@ html {
     height: auto;
   }
   .contact-us #reset {
-    padding: 0;
+    padding: 20px;
     margin: 0;
     border: none;
     width: auto;
@@ -1543,6 +1543,11 @@ html {
     text-align: center;
   }
   .contact-us #reset h2 {
+    padding: 0;
+    margin: 37px 0 0 0;
+    border: none;
+    width: auto;
+    height: auto;
     font-size: 3.3rem;
     font-family: adobe-garamond-pro, serif;
     font-weight: 700;
