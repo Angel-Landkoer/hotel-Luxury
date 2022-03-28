@@ -1351,7 +1351,7 @@ html {
     padding: 0;
     margin: 0;
     border: none;
-    width: 90%;
+    width: 100%;
     height: auto;
     -webkit-transition: none;
     transition: none;
@@ -1365,7 +1365,7 @@ html {
     margin: 0;
     border: none;
     width: 50%;
-    height: auto;
+    height: 40px;
     border-radius: 5px;
     -webkit-transform: translate(5px, -32px);
             transform: translate(5px, -32px);
@@ -1434,7 +1434,7 @@ html {
     margin: 0;
     border: none;
     width: 95vw;
-    height: 55vh;
+    height: 55px;
     background-color: #14274A;
   }
   .rooms .main__room-and-rates .room-and-rates__room-types span {
@@ -1443,7 +1443,7 @@ html {
   .rooms .main__room-and-rates .room-and-rates__rates {
     padding: 0;
     margin: 0;
-    border: none;
+    border: 1px #14274A solid;
     width: 95vw;
     height: auto;
   }
@@ -1560,7 +1560,7 @@ html {
     height: auto;
   }
   .paper .main__page h1 {
-    font-size: 3rem;
+    font-size: 3.7rem;
     font-family: adobe-garamond-pro, serif;
   }
   .paper .main__page p {

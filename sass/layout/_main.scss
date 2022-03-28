@@ -605,7 +605,7 @@
       }
 
       & .phone-gallery__picture img {
-        @include medidas(0, 0, none, 90%, auto);
+        @include medidas(0, 0, none, 100%, auto);
 
         transition: none;
       }
@@ -616,7 +616,7 @@
       }
 
       & .phone-gallery__picture div {
-        @include medidas(0, 0, none, 50%, auto);
+        @include medidas(0, 0, none, 50%, 40px);
 
         border-radius: 5px;
         transform: translate(5px, -32px);
@@ -652,7 +652,7 @@
         }
       }
       .room-and-rates__room-types {
-        @include medidas(0, 0, none, 95vw, 55vh);
+        @include medidas(0, 0, none, 95vw, 55px);
 
         background-color: $secondarbackground;
 
@@ -662,7 +662,7 @@
       }
 
       .room-and-rates__rates {
-        @include medidas(0, 0, none, 95vw, auto);
+        @include medidas(0, 0, 1px #14274A solid, 95vw, auto);
 
         & button {
           @include medidas(0, 0 15px 0 0, none, 30%, 43px);
@@ -736,7 +736,7 @@
       @include medidas(0, 0, none, 100%, auto);
 
       & h1 {
-        font-size: 3rem;
+        font-size: 3.7rem;
         font-family: adobe-garamond-pro, serif;
       }
 
