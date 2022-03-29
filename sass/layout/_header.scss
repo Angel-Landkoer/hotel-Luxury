@@ -1,3 +1,34 @@
+// sections principal de cada archovo HTML
+
+.header_sectionIndex--background {
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--1.jpg?raw=true");
+  background-position: 20%;
+  color: $secondaryColor;
+}
+
+.header_sectionFacilities--background {
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img-2.jpg?raw=true");
+  background-position: 20%;
+  color: $secondaryColor;
+}
+
+.header_sectionRooms--background {
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--3.jpg?raw=true");
+  background-position: 20%;
+  color: $secondaryColor;
+}
+
+.header_sectionAbout--background {
+  height: 47vh;
+
+  background-color: #14274a;
+}
+
+.header_sectionContact--background {
+  height: 47vh;
+  background-color: #14274a;
+}
+
 //  espacio para especificar todo el contenido del header   home, facilities, rooms, about and contact-us : header
 
 .header__nav {

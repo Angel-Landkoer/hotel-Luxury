@@ -4,8 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="">
+    <meta
+      name="description"
+      content="Ven a LUXURY y disfruta de una experiencia increíble, explora todas las hermosas vistas, deléitese con una rica comida que tenemos preparado para usted, relájate y medite en nuestro spa y descanse bien en nuestras habitaciones."
+    />
+    <meta
+      name="keywords"
+      content="Relájarse, Meditar, Disfrutar, tranquilidad"
+    />
     <link rel="stylesheet" href="../sass/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,64 +35,60 @@
   </head>
   <body>
     <div class="grid-layout">
-      <header
-        style="
-          background-image: url(https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img-2.jpg?raw=true);
-          background-position: 20%;
-          color: #fff;
-        "
-      >
-        <nav class="header__nav">
+      <header>
+        <section class="header_sectionFacilities--background">
+          <nav class="header__nav">
+            <div data-aos="fade-right">
+              <a href="../index.html">
+                <figure>
+                  <img
+                    src="https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/logo.png?raw=true"
+                    alt="Esta es el logo del sitio web"
+                  />
+                </figure>
+              </a>
+            </div>
+
+            <div class="toggle-open">
+              <button class="button-reset" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars fs3-icon"></i>
+              </button>
+            </div>
+
+            <div class="toggle-close">
+              <button class="button-reset" onclick="toggleMenu()">
+                <i class="fa-solid fa-xmark fs5-icon"></i>
+              </button>
+
+              <ul class="header__menu">
+                <li class="menu__items"><a href="../index.html">Home</a></li>
+                <li class="menu__items">
+                  <a href="./facilities.html">Facilities</a>
+                </li>
+                <li class="menu__items"><a href="./rooms.html">Rooms</a></li>
+                <li class="menu__items"><a href="./about.html">About</a></li>
+                <li class="menu__items">
+                  <a href="./contact-us.html">Contact-Us</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
           <div data-aos="fade-right">
-            <a href="../index.html">
-              <figure>
-                <img
-                  src="https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/logo.png?raw=true"
-                  alt="Esta es el logo del sitio web"
-                />
-              </figure>
-            </a>
+            <h1 class="header__title">
+              <span class="header__title-characteristic"> WELCOME TO</span>
+              <span class="header__title-characteristic--adobe" id="plus"
+                >LUXURY</span
+              >
+              <span class="header__title-characteristic--adobe">HOTELS</span>
+              <span class="header__title-characteristic line">
+                Book your stay and enjoy Luxury
+              </span>
+              <span class="header__title-characteristic line">
+                redefined at the most affordable rates.</span
+              >
+            </h1>
           </div>
-
-          <div class="toggle-open">
-            <button class="button-reset" onclick="toggleMenu()">
-              <i class="fa-solid fa-bars fs3-icon"></i>
-            </button>
-          </div>
-
-          <div class="toggle-close">
-            <button class="button-reset" onclick="toggleMenu()">
-              <i class="fa-solid fa-xmark fs5-icon"></i>
-            </button>
-
-            <ul class="header__menu">
-              <li class="menu__items"><a href="../index.html">Home</a></li>
-              <li class="menu__items">
-                <a href="./facilities.html">Facilities</a>
-              </li>
-              <li class="menu__items"><a href="./rooms.html">Rooms</a></li>
-              <li class="menu__items"><a href="./about.html">About</a></li>
-              <li class="menu__items">
-                <a href="./contact-us.html">Contact-Us</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <div data-aos="fade-right">
-          <h1 class="header__title">
-            <span class="header__title-characteristic"> WELCOME TO</span>
-            <span class="header__title-characteristic--adobe" id="plus"
-              >LUXURY</span
-            >
-            <span class="header__title-characteristic--adobe">HOTELS</span>
-            <span class="header__title-characteristic line">
-              Book your stay and enjoy Luxury
-            </span>
-            <span class="header__title-characteristic line">
-              redefined at the most affordable rates.</span
-            >
-          </h1>
-        </div>
+        </section>
       </header>
       <main>
         <section class="gallery">
@@ -219,7 +221,7 @@
         </section>
       </main>
       <footer>
-        <div class="footer__container">
+        <section class="footer__container">
           <div class="container__data">
             <p>497 Evergreen Rd. Roseville,</p>
             <p>+44 345 678 903</p>
@@ -255,12 +257,14 @@
                   name="email"
                   placeholder="Email Address"
                   autocomplete="email"
+                  required
+                  title="Por favor, ingresar su email"
                 />
               </label>
               <input class="formulaty__input-send" type="submit" value="OK" />
             </form>
           </div>
-        </div>
+        </section>
       </footer>
     </div>
     <script src="../index.js"></script>

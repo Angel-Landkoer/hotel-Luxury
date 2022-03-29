@@ -23,6 +23,34 @@ html {
   font-weight: 700;
 }
 
+.header_sectionIndex--background {
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--1.jpg?raw=true");
+  background-position: 20%;
+  color: #ffff;
+}
+
+.header_sectionFacilities--background {
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img-2.jpg?raw=true");
+  background-position: 20%;
+  color: #ffff;
+}
+
+.header_sectionRooms--background {
+  background-image: url("https://github.com/Angel-Landkoer/The-pictures/blob/master/img-ideaApellido/header__img--3.jpg?raw=true");
+  background-position: 20%;
+  color: #ffff;
+}
+
+.header_sectionAbout--background {
+  height: 47vh;
+  background-color: #14274a;
+}
+
+.header_sectionContact--background {
+  height: 47vh;
+  background-color: #14274a;
+}
+
 .header__nav {
   display: -webkit-box;
   display: -ms-flexbox;
