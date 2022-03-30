@@ -144,6 +144,7 @@ html {
 }
 
 .header__title .header__title-characteristic {
+  font-size: 2rem;
   font-weight: 400;
 }
 

@@ -20,7 +20,6 @@
 
 .header_sectionAbout--background {
   height: 47vh;
-
   background-color: #14274a;
 }
 
@@ -79,6 +78,7 @@
   text-align: start;
 
   .header__title-characteristic {
+    font-size: 2rem;
     font-weight: $firstLevel;
   }
   .header__title-characteristic--adobe {
