@@ -857,17 +857,17 @@ html {
   border: none;
   width: auto;
   height: auto;
+  text-align: justify;
   border-radius: 10px;
-  background-color: #aaa;
+  background-color: #bdb4b4;
 }
 
 .about .about__information-container h2 {
   padding: 0;
   margin: 0 0 8px 0;
   border: none;
-  width: 80px;
-  height: 50px;
-  text-align: center;
+  width: 100%;
+  height: auto;
 }
 
 .about .about__information-container p {
@@ -1535,11 +1535,17 @@ html {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    padding: 0;
+    padding: 10px;
     margin: 15px;
     border: none;
     width: auto;
     height: auto;
+  }
+  .about .about__information-container h2 {
+    font-size: 2.5rem;
+  }
+  .about .about__information-container p {
+    font-size: 1.4rem;
   }
   .contact-us {
     display: -webkit-box;

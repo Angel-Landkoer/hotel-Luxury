@@ -309,14 +309,14 @@
 
   .about__information-container {
     @include medidas(10px, 50px 0 0 0, none, auto, auto);
+    text-align: justify;
 
     border-radius: 10px;
-    background-color: #aaa;
+    background-color: #bdb4b4 ;
 
     & h2 {
-      @include medidas(0, 0 0 8px 0, none, 80px, 50px);
+      @include medidas(0, 0 0 8px 0, none, 100%, auto);
 
-      text-align: center;
       @extend %h2;
     }
 
@@ -702,7 +702,15 @@
     .about__information-container {
       @include flex(column, center, center, wrap);
 
-      @include medidas(0, 15px, none, auto, auto);
+      @include medidas(10px, 15px, none, auto, auto);
+
+      & h2 {
+        font-size: 2.5rem
+      }
+
+      & p {
+        font-size: 1.4rem
+      }
     }
   }
 
