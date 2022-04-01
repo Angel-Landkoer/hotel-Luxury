@@ -1,16 +1,38 @@
 //          reset
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  html {
-    font-size: 62.5%;
-    font-family: "Montserrat", sans-serif;
-  
-    background-color: #e5e5e5;
-    color: #14274a;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+
+  background-color: #e5e5e5;
+  color: #14274a;
+}
+
+/*          grid layout      */
+.grid-layout {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+/*            end        */
 //          end
-  

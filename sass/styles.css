@@ -12,6 +12,32 @@ html {
   color: #14274a;
 }
 
+/*          grid layout      */
+.grid-layout {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: header;
+}
+
+main {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: main;
+}
+
+footer {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: footer;
+}
+
+/*            end        */
 .services .main__data .main__container p, .gallery .main__top-page p, .rooms .main__top-page p, .about .about__information-container p, .contact-us .main__top-page p, .paper .main__page p {
   font-size: 1.6rem;
   font-weight: 500;
