@@ -476,17 +476,15 @@ footer {
   border: none;
   width: 560px;
   height: 390px;
-  -webkit-transition: width 1s linear, height 2s linear, -webkit-transform 1s linear;
-  transition: width 1s linear, height 2s linear, -webkit-transform 1s linear;
-  transition: width 1s linear, height 2s linear, transform 1s linear;
-  transition: width 1s linear, height 2s linear, transform 1s linear, -webkit-transform 1s linear;
+  -webkit-transition: -webkit-transform 1s linear;
+  transition: -webkit-transform 1s linear;
+  transition: transform 1s linear;
+  transition: transform 1s linear, -webkit-transform 1s linear;
 }
 
 .services .main__data .main__container .container__the-piture img:hover {
-  width: 500px;
-  height: 360px;
-  -webkit-transform: translateX(-40px);
-          transform: translateX(-40px);
+  -webkit-transform: translate(-35px, 10px);
+          transform: translate(-35px, 10px);
 }
 
 .services .main__bottom-page {
@@ -596,6 +594,15 @@ footer {
   height: auto;
   font-size: 2.5rem;
   font-weight: 700;
+  -webkit-transition: -webkit-transform 2s linear;
+  transition: -webkit-transform 2s linear;
+  transition: transform 2s linear;
+  transition: transform 2s linear, -webkit-transform 2s linear;
+}
+
+.gallery .phone-gallery .phone-gallery__picture:hover {
+  -webkit-transform: scale(0.75, 0.75);
+          transform: scale(0.75, 0.75);
 }
 
 .gallery .phone-gallery .phone-gallery__picture img {
@@ -605,13 +612,6 @@ footer {
   width: 1000px;
   height: 650px;
   border-radius: 6px;
-  -webkit-transition: width 2s linear, height 2s linear;
-  transition: width 2s linear, height 2s linear;
-}
-
-.gallery .phone-gallery .phone-gallery__picture img:hover {
-  width: 700px;
-  height: 450px;
 }
 
 .gallery .phone-gallery .phone-gallery__picture div {
@@ -1385,6 +1385,14 @@ footer {
     width: 100%;
     height: auto;
   }
+  .gallery .phone-gallery .phone-gallery__picture {
+    -webkit-transition: none;
+    transition: none;
+  }
+  .gallery .phone-gallery .phone-gallery__picture:hover {
+    -webkit-transform: none;
+            transform: none;
+  }
   .gallery .phone-gallery .phone-gallery__picture figure {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1498,7 +1506,7 @@ footer {
   .rooms .main__room-and-rates .room-and-rates__rates {
     padding: 0;
     margin: 0;
-    border: 1px #14274A solid;
+    border: 1px #14274a solid;
     width: 95vw;
     height: auto;
   }

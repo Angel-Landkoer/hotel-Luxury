@@ -75,12 +75,11 @@
         & img {
           @include medidas(0, 0, none, 560px, 390px);
 
-          transition: width 1s linear, height 2s linear, transform 1s linear;
-        }
-        & img:hover {
-          width: 500px;
-          height: 360px;
-          transform: translateX(-40px);
+          transition: transform 1s linear;
+
+          &:hover {
+            transform: translate(-35px, 10px);
+          }
         }
       }
     }
@@ -144,16 +143,16 @@
       font-size: 2.5rem;
       font-weight: $thirdLevel;
 
+      transition: transform 2s linear;
+
+      &:hover {
+        transform: scale(0.75, 0.75);
+      }
+
       & img {
         @include medidas(0, 0, 2px $primaryColor solid, 1000px, 650px);
 
         border-radius: 6px;
-        transition: width 2s linear, height 2s linear;
-      }
-
-      & img:hover {
-        width: 700px;
-        height: 450px;
       }
 
       & div {
@@ -312,7 +311,7 @@
     text-align: justify;
 
     border-radius: 10px;
-    background-color: #bdb4b4 ;
+    background-color: #bdb4b4;
 
     & h2 {
       @include medidas(0, 0 0 8px 0, none, 100%, auto);
@@ -600,6 +599,14 @@
 
       @include medidas(30px, 0, none, 100%, auto);
 
+      & .phone-gallery__picture {
+        transition: none;
+
+        &:hover {
+          transform: none;
+        }
+      }
+
       & .phone-gallery__picture figure {
         @include flex(row, center, center, nowrap);
       }
@@ -662,7 +669,7 @@
       }
 
       .room-and-rates__rates {
-        @include medidas(0, 0, 1px #14274A solid, 95vw, auto);
+        @include medidas(0, 0, 1px #14274a solid, 95vw, auto);
 
         & button {
           @include medidas(0, 0 15px 0 0, none, 30%, 43px);
@@ -705,11 +712,11 @@
       @include medidas(10px, 15px, none, auto, auto);
 
       & h2 {
-        font-size: 2.5rem
+        font-size: 2.5rem;
       }
 
       & p {
-        font-size: 1.4rem
+        font-size: 1.4rem;
       }
     }
   }
